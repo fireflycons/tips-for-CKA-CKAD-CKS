@@ -157,3 +157,4 @@ Again, type these to the exam notepad so you can paste them to command prompts. 
 * [vim Cheat Sheet](https://vim.rtorr.com/)
 * [tmux Cheat Sheet](https://opensource.com/article/20/7/tmux-cheat-sheet)
 * [Useful Exam Bookmarks](https://github.com/vjunior1981/cka-2022-bookmarks) - Courtesy of Vitor Jr. (KodeKloud)
+* [Specific Questions About Exam](https://trainingsupport.linuxfoundation.org/). Login here with your Linux Foundation credentials. You can raise a ticket to ask questions about anything to do with the exam. The answers you receive here are the ultimate source of truth and trump anything you may read on this page or in any public discussion forums. Expect 2-3 days for a response.
