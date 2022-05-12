@@ -86,7 +86,7 @@ What these do, in order:
     1. Save changes with `:w`
     1. In other pane `kubectl apply -f ...`
     1. If error in YAML repeat the above till it works
-* Where a question asks you to ssh to another nodes e.g. when doing a cluster upgrade, you can have one prompt on the control plane and the other on a worker node.
+* Where a question asks you to ssh to other nodes e.g. when doing a cluster upgrade, you can have one prompt on the control plane and the other on a worker node.
 
 ### Installing in lab environments
 
@@ -115,7 +115,6 @@ Run `tmux` at the main exam terminal after performing the above Early Exit, `vim
 * To create a vertical split, type `CTRL`-`B` followed by `%`
 * Cancel a split by typing `CTRL`-`D` or `exit` at one of the command prompts
 * Switch between panes by left mouse click
-
 * If you have enough screen real estate (eg. 4K monitor), you can create splits within splits by repeating the above key sequences, however I find that two panes is generally sufficient.
 
 ### Quirks
