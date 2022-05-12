@@ -137,10 +137,23 @@ Again, type these to the exam notepad so you can paste them to command prompts. 
 
 # Links
 
+## Pre-Exam
+
 * [Exam System Requirements](https://docs.linuxfoundation.org/tc-docs/certification/faq-cka-ckad-cks#what-are-the-system-requirements-to-take-the-exam)
 * [Exam Workspace Requirements](https://docs.linuxfoundation.org/tc-docs/certification/faq-cka-ckad-cks#what-are-the-testing-environment-requirements-to-take-the-exam)
 * [Exam ID requirements](https://docs.linuxfoundation.org/tc-docs/certification/faq-cka-ckad-cks#what-are-the-id-requirements-to-take-the-exam)
-* [CKA/CKAD Allowed Documentation](https://docs.linuxfoundation.org/tc-docs/certification/certification-resources-allowed#certified-kubernetes-administrator-cka-and-certified-kubernetes-application-developer-ckad)
-* [CKS Allowed Documentation](https://docs.linuxfoundation.org/tc-docs/certification/certification-resources-allowed#certified-kubernetes-security-specialist-cks)
+
+## CKA/CKAD
+
+* [Exam Environment](https://docs.linuxfoundation.org/tc-docs/certification/tips-cka-and-ckad#cka-and-ckad-environment)
+* [Allowed Documentation](https://docs.linuxfoundation.org/tc-docs/certification/certification-resources-allowed#certified-kubernetes-administrator-cka-and-certified-kubernetes-application-developer-ckad)
+
+## CKS
+* [Exam Environment](https://docs.linuxfoundation.org/tc-docs/certification/important-instructions-cks#cks-environment)
+* [Allowed Documentation](https://docs.linuxfoundation.org/tc-docs/certification/certification-resources-allowed#certified-kubernetes-security-specialist-cks)
+
+## Other
+
 * [vim Cheat Sheet](https://vim.rtorr.com/)
 * [tmux Cheat Sheet](https://opensource.com/article/20/7/tmux-cheat-sheet)
+* [Useful Exam Bookmarks](https://github.com/vjunior1981/cka-2022-bookmarks) - Courtesy of Vitor Jr. (KodeKloud)
