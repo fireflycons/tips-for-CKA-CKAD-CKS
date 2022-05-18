@@ -39,6 +39,8 @@ vi my-pod.yaml
 kubectl create -f my-pod.yaml
 ```
 
+For objects that can't be created imperatively like Persistent Volumes, it is useful to have bookmarks directly to the YAML for these so you can copy/paste them before editing.
+
 # Exam Environment Configuration
 
 You are not allowed to paste any settings into the terminal (e.g. aliases, dotfiles etc) from another source. You must commit all these to memory and type them in at the beginning.
