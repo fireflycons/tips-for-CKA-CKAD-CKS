@@ -49,11 +49,11 @@ Below are my personal preferences. You can and should practice these in all popu
 
 ## Preventing Early Exit from the Exam
 
-If you exit the main terminal, then the proctor has to get you back in. The clock does *not* stop while this happens so you will lose valuable time. Prevent this happening to you by entering these commands at the very first command prompt. Do this absolutely as the first task - before adding any personal configuration or attempting any question.
+If you exit the main terminal, then the proctor has to get you back in. The clock *does not stop* while this happens so you will lose valuable time. Prevent this happening to you by entering these commands at the very first command prompt. Do this absolutely as the first task - before adding any personal configuration or attempting any question.
 
 ```shell
 set -o ignoreeof
-alias exit='echo "No exit here!"'
+alias exit='echo No!'
 ```
 
 The first command prevents `CTRL`-`D` from exiting the shell; the second prevents the `exit` command from running and instead prints a message.
