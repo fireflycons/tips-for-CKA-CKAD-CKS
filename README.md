@@ -31,6 +31,14 @@ Once the proctor is satified and launches the exam, this is what you will get.
 * You may not install additional software from package repos or other locations except when directed by an exam question, and only from the links it gives you.
     * **NOTE** You won't be asked to install anything (e.g. CNI plugins) for which a link isn't present in the allowed docs. You will be provided with a link in the question.
 
+**PRO TIP** Know as many imperative commands as you can. This will reduce the amount of YAML editing you need to do. For example if you are asked to create an nginx pod and set up a volume mount inside it, create the pod imperatively, then only make necessary edits to YAML to add the volume...
+
+```shell
+kubectl run my-pod --image=nginx --dry=run=client -o yaml > my.pod.yaml
+vi my-pod.yaml
+kubectl create -f my-pod.yaml
+```
+
 # Exam Environment Configuration
 
 You are not allowed to paste any settings into the terminal (e.g. aliases, dotfiles etc) from another source. You must commit all these to memory and type them in at the beginning.
@@ -90,7 +98,7 @@ What these do, in order:
 
 ### Installing in lab environments
 
-In many lab environments, `tmux` is not installed by default. To install it at the start of the lab session, do the following
+While `tmux` *is* preinstalled in the real exam, in many lab environments it is not installed by default. To install it at the start of a lab session, do the following
 
 1. Determine the OS distribution<br>`cat /etc/os-release`
 1. If Ubuntu, run<br>`apt update && apt install tmux`
@@ -156,4 +164,6 @@ Again, type these to the exam notepad so you can paste them to command prompts. 
 * [vim Cheat Sheet](https://vim.rtorr.com/)
 * [tmux Cheat Sheet](https://opensource.com/article/20/7/tmux-cheat-sheet)
 * [Useful Exam Bookmarks](https://github.com/vjunior1981/cka-2022-bookmarks) - Courtesy of Vitor Jr. (KodeKloud)
+
+## Specific Questions About The Exam
 * [Specific Questions About Exam](https://trainingsupport.linuxfoundation.org/). Login here with your Linux Foundation credentials. You can raise a ticket to ask questions about anything to do with the exam. The answers you receive here are the ultimate source of truth and trump anything you may read on this page or in any public discussion forums. Expect 2-3 days for a response.
