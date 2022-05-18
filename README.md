@@ -34,7 +34,7 @@ Once the proctor is satified and launches the exam, this is what you will get.
 **PRO TIP** Know as many imperative commands as you can. This will reduce the amount of YAML editing you need to do. For example if you are asked to create an nginx pod and set up a volume mount inside it, create the pod imperatively, then only make necessary edits to YAML to add the volume...
 
 ```shell
-kubectl run my-pod --image=nginx --dry=run=client -o yaml > my.pod.yaml
+kubectl run my-pod --image=nginx --dry=run=client -o yaml > my-pod.yaml
 vi my-pod.yaml
 kubectl create -f my-pod.yaml
 ```
