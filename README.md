@@ -47,11 +47,11 @@ You are not allowed to paste any settings into the terminal (e.g. aliases, dotfi
 
 I found that as soon as the portal was launched, and while the environment was creating that I could start typing these into the exam notepad. By the time the command prompt appeared, I was mostly done and it was a simple copy/paste from the exam notepad to the terminal. This will save you up to a minute depending on how many alaises, config items etc you want to use.
 
-Below are my personal preferences. You can and should practice these in all popular lab environments like KodeKloud and Katacoda.
+Below are my personal preferences. You can and should practice these in all popular lab environments like KodeKloud and Katacoda and also when you get to it, killer.sh.
 
 ## Preventing Early Exit from the Exam
 
-If you exit the main terminal, then the proctor has to get you back in. The clock *does not stop* while this happens so you will lose valuable time. Prevent this happening to you by entering these commands at the very first command prompt. Do this absolutely as the first task - before adding any personal configuration or attempting any question.
+If you exit the main terminal, then the proctor has to get you back in. The clock *does not stop* while this happens so you will lose valuable time. Prevent this happening to you by entering these commands at the very first command prompt. Do this absolutely as the first task - before adding any personal configuration or attempting any question. Do *not* run these in any other terminal (e.g. inside `tmux`) or node you ssh to, or you will find it hard to get back out - absolutely *only* in the very first command prompt when the exam starts.
 
 ```shell
 set -o ignoreeof
@@ -100,7 +100,7 @@ What these do, in order:
 
 ### Installing in lab environments
 
-While `tmux` *is* preinstalled in the real exam, in many lab environments it is not installed by default. To install it at the start of a lab session, do the following
+While `tmux` *is* preinstalled in the real exam and on killer.sh, in many lab environments it is not installed by default. To install it at the start of a lab session, do the following
 
 1. Determine the OS distribution<br>`cat /etc/os-release`
 1. If Ubuntu, run<br>`apt update && apt install tmux`
