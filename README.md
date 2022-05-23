@@ -8,7 +8,8 @@ They are also performance based. This means that you have to solve somewhere bet
 # Proctor and Workspace
 
 * Allow at least 15-20 minutes from when you first connect with the proctor to them actually launching the exam! The better prepared your work area is, the less fuss there will be and the sooner the proctor will launch the exam.
-* Make sure there is nothing within 2 metres of where you are sitting, other than the computer equipment required for the exam. You are also allowed water in a clear glass. No pens, paper or any other clutter.
+* Make sure there are no objects (other than furniture) within 2 metres of where you are sitting, other than the computer equipment required for the exam. You are also allowed water in a clear glass. No pens, paper, books, electronics or any other clutter or anything with text on (that could be seen by proctor as a cheat sheet), including on the walls.
+* Remove smart watches.
 * Make sure you can move your camera. Proctor will want a 360 degree sweep of the area, and will want to see under your desk.
 * If there are removable drawers in your desk, best to remove them.
 * The jury is out as to whether you can have two monitors, though given the requirements for what you can run, detailed in the next section, there's little point in it so better to disconnect/remove additional monitors. If using a laptop with connected external monitor, set external as primary and work with laptop lid closed (this will likely require you to have a plug-in USB camera).
@@ -23,11 +24,12 @@ They are also performance based. This means that you have to solve somewhere bet
 
 # The Exam Portal
 
-Once the proctor is satified and launches the exam, this is what you will get.
+Once the proctor is satisfied and launches the exam, this is what you will get.
 
 * You only get one exam terminal. If you want multiple terminals you must use [tmux](https://github.com/tmux/tmux/wiki) which is pre-installed in the exam environment. 4K monitor is bonus here so you're not stuck with really small panes.
 * The `k` alias and bash autocomplete for `kubectl` are also pre-installed. You only need to add other aliases and exports to help you.
 * Editors `vim` (`vi`) and `nano` are pre-installed.
+* The portal includes a notepad feature (access from a menu top right) into which you can make notes during the exam. Pen and paper is not allowed.
 * You may not install additional software from package repos or other locations except when directed by an exam question, and only from the links it gives you.
     * **NOTE** You won't be asked to install anything (e.g. CNI plugins) for which a link isn't present in the allowed docs. You will be provided with a link in the question.
 
