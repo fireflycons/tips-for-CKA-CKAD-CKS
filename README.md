@@ -49,7 +49,7 @@ You are not allowed to paste any settings into the terminal (e.g. aliases, dotfi
 
 I found that as soon as the portal was launched, and while the environment was creating that I could start typing these into the exam notepad. By the time the command prompt appeared, I was mostly done and it was a simple copy/paste from the exam notepad to the terminal. This will save you up to a minute depending on how many alaises, config items etc you want to use.
 
-Below are my personal preferences. You can and should practice these in all popular lab environments like KodeKloud and Katacoda and also when you get to it, killer.sh.
+Below are my personal preferences. You can and should practice these in all popular lab environments like KodeKloud and Killercoda and also when you get to it, killer.sh.
 
 ## Preventing Early Exit from the Exam
 
@@ -128,6 +128,8 @@ Run `tmux` at the main exam terminal after performing the above Early Exit, `vim
 * Cancel a split by typing `CTRL`-`D` or `exit` at one of the command prompts
 * Switch between panes by left mouse click
 * If you have enough screen real estate (eg. 4K monitor), you can create splits within splits by repeating the above key sequences, however I find that two panes is generally sufficient.
+
+**PRO TIP** The best place to practice `tmux` skills is on [Killercoda](https://killercoda.com/killer-shell-cka). This platform is by the same people that create killer.sh, therefore it is the closest you'll get to the real exam user interface - including the quirkiness of `tmux` which is slightly different in say KodeKloud.
 
 ### Quirks
 
