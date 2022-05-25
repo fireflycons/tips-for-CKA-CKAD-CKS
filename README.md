@@ -5,6 +5,21 @@ The Certified Kubernetes exams are all online-proctored. This means that you do 
 
 They are also performance based. This means that you have to solve somewhere between 17 and 25 questions using a Linux terminal provided in the exam portal via your browser. So you have no nice GUI editors like VSCode etc - just `vim` or `nano` text based editors. You will need to get fast at editing YAML files in these editors!
 
+# Am I Ready?
+
+Always the burning question!
+
+I think take the following into consideration.
+
+* You can complete the mock exams and lightning labs faster than the instructor (where a solution video is posted) with no errors. Generally this means 20-30 min depending on the test.
+* Now buy your exam. Wait for a decent coupon code to come up - these are always publicised on the KodeKloud slack channels. You have a year to actually schedule it.
+* Do one of your two attempts at killer.sh. Reset it as many times as necessary in the 36 hours you have. You're aiming to complete it within 10 points of maximum score ideally in little more than 90 minutes. Killer is arguably *harder* than the real exam!
+    * If you achieve that on the first session, you're probably ready.
+    * If you don't - read and understand the killer solutions, go back, revise the lectures, redo the labs, give it a few weeks.
+* Schedule the exam for say two weeks in the fuuture
+* Between scheduling and taking, do the second killer session. You will get the same quesitons so it should be easy this time.
+* Take the exam - good luck!
+
 # Proctor and Workspace
 
 * Allow at least 15-20 minutes from when you first connect with the proctor to them actually launching the exam! The better prepared your work area is, the less fuss there will be and the sooner the proctor will launch the exam.
