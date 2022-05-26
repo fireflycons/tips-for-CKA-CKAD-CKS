@@ -11,13 +11,13 @@ Always the burning question!
 
 I think take the following into consideration.
 
-* You can complete the mock exams and lightning labs faster than the instructor (where a solution video is posted) with no errors. Generally this means 20-30 min depending on the test.
+* You can complete the mock exams and lightning labs (KodeKloud/Udemy Mumshad Mannambeth courses) faster than the instructor (where a solution video is posted) with no errors. Generally this means 20-30 min depending on the test.
 * Now buy your exam. Wait for a decent coupon code to come up - these are always publicised on the KodeKloud slack channels. You have a year to actually schedule it.
 * Do one of your two attempts at killer.sh. Reset it as many times as necessary in the 36 hours you have. You're aiming to complete it within 10 points of maximum score ideally in little more than 90 minutes. Killer is arguably *harder* than the real exam!
     * If you achieve that on the first session, you're probably ready.
     * If you don't - read and understand the killer solutions, go back, revise the lectures, redo the labs, give it a few weeks.
-* Schedule the exam for say two weeks in the fuuture
-* Between scheduling and taking, do the second killer session. You will get the same quesitons so it should be easy this time.
+* Schedule the exam for say two weeks in the future
+* Between scheduling and taking, do the second killer session. You will get the same questions so it should be easy this time.
 * Take the exam - good luck!
 
 # Proctor and Workspace
@@ -31,7 +31,7 @@ I think take the following into consideration.
 
 # Your Workstation
 
-* You may only use Chrome or Chromium browser for full compatibiliy with exam interface and required screen share plugin.
+* You may only use Chrome or Chromium browser for full compatibility with exam interface and required screen share plugin.
 * You may only have one instance of this running, and no other foreground tasks. Proctor will likely ask you to run up your system's task manager application to verify this.
 * You may have one additional browser tab open to view allowed documentation [CKA/CKAD](https://docs.linuxfoundation.org/tc-docs/certification/certification-resources-allowed#certified-kubernetes-administrator-cka-and-certified-kubernetes-application-developer-ckad), [CKS](https://docs.linuxfoundation.org/tc-docs/certification/certification-resources-allowed#certified-kubernetes-security-specialist-cks).
 * You are allowed to use pre-created bookmarks to any page in the allowed documentation.
@@ -62,7 +62,7 @@ For objects that can't be created imperatively like Persistent Volumes, it is us
 
 You are not allowed to paste any settings into the terminal (e.g. aliases, dotfiles etc) from another source. You must commit all these to memory and type them in at the beginning.
 
-I found that as soon as the portal was launched, and while the environment was creating that I could start typing these into the exam notepad. By the time the command prompt appeared, I was mostly done and it was a simple copy/paste from the exam notepad to the terminal. This will save you up to a minute depending on how many alaises, config items etc you want to use.
+I found that as soon as the portal was launched, and while the environment was creating that I could start typing these into the exam notepad. By the time the command prompt appeared, I was mostly done and it was a simple copy/paste from the exam notepad to the terminal. This will save you up to a minute depending on how many aliases, config items etc you want to use.
 
 Below are my personal preferences. You can and should practice these in all popular lab environments like KodeKloud and Killercoda and also when you get to it, killer.sh.
 
@@ -144,7 +144,7 @@ Run `tmux` at the main exam terminal after performing the above Early Exit, `vim
 * Switch between panes by left mouse click
 * If you have enough screen real estate (eg. 4K monitor), you can create splits within splits by repeating the above key sequences, however I find that two panes is generally sufficient.
 
-**PRO TIP** The best place to practice `tmux` skills is on [Killercoda](https://killercoda.com/killer-shell-cka). This platform is by the same people that create killer.sh, therefore it is the closest you'll get to the real exam user interface - including the quirkiness of `tmux` which is slightly different in say KodeKloud.
+**PRO TIP** The best place to practice `tmux` skills is on [Killercoda](https://killercoda.com/areas). This platform is by the same people that create killer.sh, therefore it is the closest you'll get to the real exam user interface - including the quirkiness of `tmux` which is slightly different in say KodeKloud.
 
 ### Quirks
 
