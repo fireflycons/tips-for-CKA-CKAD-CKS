@@ -117,6 +117,14 @@ What these do, in order:
 
 ### Installing in lab environments
 
+Update: It seems that `tmux` may now be installed by default in KodeKloud labs. You can check in any lab environment (KK or otherwise) by running
+
+```shell
+which tmux
+```
+
+If not, then proceed with the following:
+
 While `tmux` *is* preinstalled in the real exam and on killer.sh, in many lab environments it is not installed by default. To install it at the start of a lab session, do the following
 
 1. Determine the OS distribution<br>`cat /etc/os-release`
