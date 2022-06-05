@@ -27,6 +27,7 @@ I think take the following into consideration.
 * Remove smart watches.
 * Make sure you can move your camera. Proctor will want a 360 degree sweep of the area, and will want to see under your desk.
 * If there are removable drawers in your desk, best to remove them.
+* Anything that's not easily moved like a big bookshelf, throw a sheet over it.
 * The jury is out as to whether you can have two monitors, though given the requirements for what you can run, detailed in the next section, there's little point in it so better to disconnect/remove additional monitors. If using a laptop with connected external monitor, set external as primary and work with laptop lid closed (this will likely require you to have a plug-in USB camera).
 
 # Your Workstation
@@ -36,6 +37,7 @@ I think take the following into consideration.
 * You may have one additional browser tab open to view allowed documentation [CKA/CKAD](https://docs.linuxfoundation.org/tc-docs/certification/certification-resources-allowed#certified-kubernetes-administrator-cka-and-certified-kubernetes-application-developer-ckad), [CKS](https://docs.linuxfoundation.org/tc-docs/certification/certification-resources-allowed#certified-kubernetes-security-specialist-cks).
 * You are allowed to use pre-created bookmarks to any page in the allowed documentation.
 * You will be penalised if you view a page with is *not* within the allowed documentation.
+* You do not need to hide or remove bookmarks not relevant to the exam, you just have to not use them. Best to arrange all your exam documentation under a single bookmark folder.
 
 # The Exam Portal
 
