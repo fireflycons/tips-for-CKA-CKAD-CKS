@@ -200,4 +200,4 @@ Again, type these to the exam notepad so you can paste them to command prompts. 
 ## Specific Questions About The Exam
 * [Specific Questions About Exam](https://trainingsupport.linuxfoundation.org/). Login here with your Linux Foundation credentials. You can raise a ticket to ask questions about anything to do with the exam. The answers you receive here are the ultimate source of truth and trump anything you may read on this page or in any public discussion forums. Expect 2-3 days for a response.
 
-If you receive an answer from the LF ticketing system that contradicts anything you read on this page, feel free to raise a pull request, quoting the ticket number.
+If you receive an answer from the LF ticketing system that contradicts anything you read on this page, or if you feel anything I've written here is incorrect or misleading, feel free to raise a pull request.
