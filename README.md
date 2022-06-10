@@ -29,7 +29,7 @@ I think take the following into consideration.
 * If there are removable drawers in your desk, best to remove them.
 * Anything that's not easily moved like a big bookshelf, throw a sheet over it.
 * The jury is out as to whether you can have two monitors, though given the requirements for what you can run, detailed in the next section, there's little point in it so better to disconnect/remove additional monitors. If using a laptop with connected external monitor, set external as primary and work with laptop lid closed if the external monitor is better although this will require you to have a plug-in USB camera/keyboard/mouse - or remove external monitor and work on laptop only.
-* If you live in an area with a high chance of power cuts, consider tethering your laptop to your phone. Ensure both are fully charged and will last the (anything up to 3 hours) required including proctor setup. If you have a desktop computer consider buying a small UPS.
+* If you live in an area with a high chance of power cuts, consider tethering your laptop to your phone. Ensure both are fully charged and will last the (anything up to 3 hours) required including proctor setup. If you have a desktop computer consider buying a small UPS. Make sure that if you are tethering to mobile, that your mobile is well out of reach and covered.
 * If you have made changes to your normal environment to fit the exam conditions (e.g. any of the above), test it thoroughly and ensure the exam compatibility check (on the exam scheduling page) is happy.
 
 # Your Workstation
