@@ -24,22 +24,33 @@ I think take the following into consideration.
 
 * Allow at least 15-20 minutes from when you first connect with the proctor to them actually launching the exam! The better prepared your work area is, the less fuss there will be and the sooner the proctor will launch the exam.
 * Make sure there are no objects (other than furniture) within 2 metres of where you are sitting, other than the computer equipment required for the exam. You are also allowed water in a clear glass. No pens, paper, books, electronics or any other clutter or anything with text on (that could be seen by proctor as a cheat sheet), including on the walls.
+* There is now going to be a pre check-in facility where you can upload a photo of yourself, your ID and a video of your work area.
 * Remove smart watches.
 * Make sure you can move your camera. Proctor will want a 360 degree sweep of the area, and will want to see under your desk.
 * If there are removable drawers in your desk, best to remove them.
 * Anything that's not easily moved like a big bookshelf, throw a sheet over it.
-* The jury is out as to whether you can have two monitors, though given the requirements for what you can run, detailed in the next section, there's little point in it so better to disconnect/remove additional monitors. If using a laptop with connected external monitor, set external as primary and work with laptop lid closed if the external monitor is better although this will require you to have a plug-in USB camera/keyboard/mouse - or remove external monitor and work on laptop only.
+* Multiple monitors are not allowed as of June 2022. If you have more than one monitor, remove the others. If you have a laptop with an external monitor and the external monitor is better than the laptop display, then you must work with the laptop lid closed, and connect USB keyboard/mouse/camera.
 * If you live in an area with a high chance of power cuts, consider tethering your laptop to your phone. Ensure both are fully charged and will last the (anything up to 3 hours) required including proctor setup. If you have a desktop computer consider buying a small UPS. Make sure that if you are tethering to mobile, that your mobile is well out of reach and covered.
 * If you have made changes to your normal environment to fit the exam conditions (e.g. any of the above), test it thoroughly and ensure the exam compatibility check (on the exam scheduling page) is happy.
 
+Please read https://training.linuxfoundation.org/bridge-migration-2021/
+
 # Your Workstation
 
-* You may only use Chrome or Chromium browser for full compatibility with exam interface and required screen share plugin.
-* You may only have one instance of this running, and no other foreground tasks. Proctor will likely ask you to run up your system's task manager application to verify this.
-* You may have one additional browser tab open to view allowed documentation [CKA/CKAD](https://docs.linuxfoundation.org/tc-docs/certification/certification-resources-allowed#certified-kubernetes-administrator-cka-and-certified-kubernetes-application-developer-ckad), [CKS](https://docs.linuxfoundation.org/tc-docs/certification/certification-resources-allowed#certified-kubernetes-security-specialist-cks).
-* You are allowed to use pre-created bookmarks to any page in the allowed documentation.
-* You will be penalised if you view a page with is *not* within the allowed documentation.
-* You do not need to hide or remove bookmarks not relevant to the exam, you just have to not use them. Best to arrange all your exam documentation under a single bookmark folder.
+Beginning June 24 2022, the exam is now delivered via the PSI Secure Browser which is software you must install from a download link provided on the exam scheduling page. There are some important points to note
+
+* Since this is a custom browser, you do not have the ability to use pre-prepared bookmarks.
+* If you have ever sat another exam at a PSI test center, then the experience is likely to be something like that.
+* Until such time as killer.sh may or may not update their interface, it will no longer be a close representation of the real exam environment.
+* On a lighter note, there should be fewer issues connecting with the proctor and getting screen sharing working.
+
+I am going to schedule an exam using this new environment in the next few weeks and will update this section based on my experience.
+
+On request for further information from Linux Foundation on the new environment, this is what they said
+
+> Personal browser bookmarks (such as bookmarked links to YAML files) will not be accessible within the PSI Secure Browser. Links to CNCF documentation, *considered most helpful to complete your work*, have been added to a Quick Reference box within each item’s instructions. We have worked closely with the CNCF team to ensure that YAML files included in the CNCF documentation are accurate.
+
+Please read https://training.linuxfoundation.org/bridge-migration-2021/ if you have not already done so.
 
 # The Exam Portal
 
@@ -177,6 +188,7 @@ Again, type these to the exam notepad so you can paste them to command prompts. 
 
 # Links
 
+Please note that the System/Workspace requirement data may be out of date due to the new [PSI Bridge](https://training.linuxfoundation.org/bridge-migration-2021/) environment. The PSI Bridge information should be treated as current. I will monitor these links and update them as things change.
 ## Pre-Exam
 
 * [Exam System Requirements](https://docs.linuxfoundation.org/tc-docs/certification/faq-cka-ckad-cks#what-are-the-system-requirements-to-take-the-exam)
@@ -196,7 +208,6 @@ Again, type these to the exam notepad so you can paste them to command prompts. 
 
 * [vim Cheat Sheet](https://vim.rtorr.com/)
 * [tmux Cheat Sheet](https://opensource.com/article/20/7/tmux-cheat-sheet)
-* [Useful Exam Bookmarks](https://github.com/vjunior1981/cka-2022-bookmarks) - Courtesy of Vitor Jr. (KodeKloud)
 
 ## Specific Questions About The Exam
 * [Specific Questions About Exam](https://trainingsupport.linuxfoundation.org/). Login here with your Linux Foundation credentials. You can raise a ticket to ask questions about anything to do with the exam. The answers you receive here are the ultimate source of truth and trump anything you may read on this page or in any public discussion forums. Expect 2-3 days for a response.
