@@ -29,9 +29,9 @@ I think take the following into consideration.
 * Make sure you can move your camera. Proctor will want a 360 degree sweep of the area, and will want to see under your desk.
 * If there are removable drawers in your desk, best to remove them.
 * Anything that's not easily moved like a big bookshelf, throw a sheet over it.
-* Multiple monitors are not allowed as of June 2022. If you have more than one monitor, remove the others. If you have a laptop with an external monitor and the external monitor is better than the laptop display, then you must work with the laptop lid closed, and connect USB keyboard/mouse/camera.
-* If you live in an area with a high chance of power cuts, consider tethering your laptop to your phone. Ensure both are fully charged and will last the (anything up to 3 hours) required including proctor setup. If you have a desktop computer consider buying a small UPS. Make sure that if you are tethering to mobile, that your mobile is well out of reach and covered.
-* If you have made changes to your normal environment to fit the exam conditions (e.g. any of the above), test it thoroughly and ensure the exam compatibility check (on the exam scheduling page) is happy.
+* Multiple monitors are not allowed as of June 2022. If you have more than one monitor, remove the others. If you have a laptop with an external monitor and the external monitor is better than the laptop display, then you must work with the laptop lid closed ensuring that the laptop display is disabled (your display settings should only register the external monitor), and connect USB keyboard/mouse/camera.
+* If you live in an area with a high chance of power cuts, consider tethering your laptop to your phone. Ensure both are fully charged and will last the (anything up to 3 hours) required including proctor setup. If you have a desktop computer consider buying a small UPS. Make sure that if you are tethering to mobile, that your mobile is well out of reach, covered and in silent mode.
+* If you have made changes to your normal environment to fit the exam conditions (e.g. any of the above), test it thoroughly in advance of exam day!
 
 Please read https://training.linuxfoundation.org/bridge-migration-2021/
 
