@@ -113,6 +113,17 @@ What these do, in order:
 
 With the new GUI desktop-based exam environment, use of `tmux` is somewhat deprecated as you can open multiple terminal windows. The one scenario where it is still useful is the case where you may want to enter the [same sequence of commands](https://medium.com/@thehackadda/synchronize-panes-in-tmux-5cd6bc54ca83) at more than one node simultaneously. Ensure you have `ssh`-ed to the target nodes in each pane before activating sync.
 
+Here is a workable `tmux` configuration that supports mouse selection of panes and `CTRL + X` to toggle sync mode. If using `tmux`, enter the following to a terminal window at the start of the exam.
+
+```shell
+
+cat << EOF > ~/.tmux.conf
+set -g default-shell /bin/bash
+set -g mouse on
+bind -n C-x setw synchronize-panes
+EOF
+```
+
 ## Creating and using your own aliases and exports
 
 You may want to do this to gain extra speed, for instance
