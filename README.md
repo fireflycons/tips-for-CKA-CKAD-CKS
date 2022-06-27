@@ -120,8 +120,8 @@ With the new GUI desktop-based exam environment, use of `tmux` is somewhat depre
 You may want to do this to gain extra speed, for instance
 
 ```shell
-alias kgp=`kubectl get pods`
-export dry='--dry-run=client -o yaml`
+alias kgp='kubectl get pods'
+export dry='--dry-run=client -o yaml'
 ```
 
 ...etc.
