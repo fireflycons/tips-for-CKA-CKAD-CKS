@@ -33,8 +33,6 @@ I think take the following into consideration.
 * If you live in an area with a high chance of power cuts, consider tethering your laptop to your phone. Ensure both are fully charged and will last the (anything up to 3 hours) required including proctor setup. If you have a desktop computer consider buying a small UPS. Make sure that if you are tethering to mobile, that your mobile is well out of reach, covered and in silent mode.
 * If you have made changes to your normal environment to fit the exam conditions (e.g. any of the above), test it thoroughly in advance of exam day!
 
-Please read https://training.linuxfoundation.org/bridge-migration-2021/
-
 # Your Workstation
 
 Beginning June 25 2022, the exam is now delivered via the PSI Secure Browser which is software you must install from a download link provided during the exam registration process. There are some important points to note
