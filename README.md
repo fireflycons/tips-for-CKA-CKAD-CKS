@@ -132,7 +132,7 @@ Since these are shell settings, you will need to add them to `.bashrc` to ensure
 vi ~/.bashrc
 ```
 
-and add your exports and aliases at the end of the file.
+and add your exports and aliases at the end of the file. Hitting `SHIFT + G` will take you directly to the last line.
 
 
 # Links
