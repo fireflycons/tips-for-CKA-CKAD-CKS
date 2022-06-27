@@ -3,7 +3,7 @@ Quick tips on exam-day preparation.
 
 The Certified Kubernetes exams are all online-proctored. This means that you do them from your own workstation, not at a test centre, while connected to a proctor who is watching you through your camera and your terminal via screen share.
 
-They are also performance based. This means that you have to solve somewhere between 17 and 25 questions using a Linux terminal provided in the exam portal via your browser. So you have no nice GUI editors like VSCode etc - just `vim` or `nano` text based editors. You will need to get fast at editing YAML files in these editors!
+They are also performance based. This means that you have to solve somewhere between 17 and 25 questions using a Linux desktop provided in the exam portal via the PSI Secure Browser which you download and install as part of the exam registration process.
 
 # Am I Ready?
 
@@ -37,29 +37,33 @@ Please read https://training.linuxfoundation.org/bridge-migration-2021/
 
 # Your Workstation
 
-Beginning June 24 2022, the exam is now delivered via the PSI Secure Browser which is software you must install from a download link provided on the exam scheduling page. There are some important points to note
+Beginning June 25 2022, the exam is now delivered via the PSI Secure Browser which is software you must install from a download link provided during the exam registration process. There are some important points to note
 
 * Since this is a custom browser, you do not have the ability to use pre-prepared bookmarks.
-* If you have ever sat another exam at a PSI test center, then the experience is likely to be something like that.
-* Until such time as killer.sh may or may not update their interface, it will no longer be a close representation of the real exam environment.
+* The "base node", i.e. the system from which you conduct the exam is an Ubuntu 20.04 desktop environment.
+* You are allowed to use any of the utilities that are included with the desktop, which includes and is not limited to
+    * `Terminal Emulator` - you may open as many terminal windows as you like.
+    * `File Manager`
+    * `Text Editor` - you may still prefer to use `vi` in a terminal to edit YAML files, as plain old text editor won't be as smart and may insert TAB characters with will break `kubectl`!
+    * `Firefox` - is included on the desktop for viewing permitted documentation. They helpfully pass this through a proxy which blocks access to all but permitted documentation, so no chance of accidentally going elsewhere. You may open multiple tabs in Firefox.
+* Links to documentation, *considered most helpful to complete your work*, have been added to a Quick Reference box within each item’s instructions.
+* Until such time as killer.sh may or may not update their user interface, it will no longer be a close representation of the real exam environment. You should still do killer though, for the question experience.
 * On a lighter note, there should be fewer issues connecting with the proctor and getting screen sharing working.
 
-I am going to schedule an exam using this new environment in the next few weeks and will update this section based on my experience.
+Additionally
 
-On request for further information from Linux Foundation on the new environment, this is what they said
+* Ensure no other foreground processes are running.
+* If you have phone integration software (e.g. My Phone on Windows), ensure this is disabled.
 
-> Personal browser bookmarks (such as bookmarked links to YAML files) will not be accessible within the PSI Secure Browser. Links to CNCF documentation, *considered most helpful to complete your work*, have been added to a Quick Reference box within each item’s instructions. We have worked closely with the CNCF team to ensure that YAML files included in the CNCF documentation are accurate.
-
-Please read https://training.linuxfoundation.org/bridge-migration-2021/ if you have not already done so.
+Please read https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2/exam-user-interface.
 
 # The Exam Portal
 
 Once the proctor is satisfied and launches the exam, this is what you will get.
 
-* You only get one exam terminal. If you want multiple terminals you must use [tmux](https://github.com/tmux/tmux/wiki) which is pre-installed in the exam environment. 4K monitor is bonus here so you're not stuck with really small panes.
-* The `k` alias and bash autocomplete for `kubectl` are also pre-installed. You only need to add other aliases and exports to help you.
-* Editors `vim` (`vi`) and `nano` are pre-installed.
-* The portal includes a notepad feature (access from a menu top right) into which you can make notes during the exam. Pen and paper is not allowed.
+* The `k` alias and bash autocomplete for `kubectl` are also pre-configured, so will function in all terminal windows launched. You only need to add other aliases and exports to help you.
+* Editors `vim` (`vi`) and `nano` are pre-installed. You may also use the desktop's Text Editor, but not really recommended for YAML editing.
+* The Secure Browser includes a notepad feature (part of Secure Browser and separate from the Linux desktop) into which you can make notes during the exam - you can also use Text Editor on the desktop. Pen and paper is not allowed.
 * You may not install additional software from package repos or other locations except when directed by an exam question, and only from the links it gives you.
     * **NOTE** You won't be asked to install anything (e.g. CNI plugins) for which a link isn't present in the allowed docs. You will be provided with a link in the question.
 
@@ -81,20 +85,11 @@ I found that as soon as the portal was launched, and while the environment was c
 
 Below are my personal preferences. You can and should practice these in all popular lab environments like KodeKloud and Killercoda and also when you get to it, killer.sh.
 
-## Preventing Early Exit from the Exam
-
-If you exit the main terminal, then the proctor has to get you back in. The clock *does not stop* while this happens so you will lose valuable time. Prevent this happening to you by entering these commands at the very first command prompt. Do this absolutely as the first task - before adding any personal configuration or attempting any question. Do *not* run these in any other terminal (e.g. inside `tmux`) or node you ssh to, or you will find it hard to get back out - absolutely *only* in the very first command prompt when the exam starts.
-
-```shell
-set -o ignoreeof
-alias exit='echo No!'
-```
-
-The first command prevents `CTRL`-`D` from exiting the shell; the second prevents the `exit` command from running and instead prints a message.
-
 ## VIM (VI)
 
-I'm no `vim` expert, but these settings work well for YAML editing. If you type it up as follows into the exam notepad, you can paste straight to the command prompt.
+Since the exam desktop does not come with an IDE (VSCode, Intellij etc.) I would still advise you to use `vi` in a terminal window for YAML editing, as if you know your `vi` commands, it's easier to get the formatting right.
+
+I'm no `vi` expert, but these settings work well for YAML editing. If you type it up as follows into the exam notepad, you can paste straight to the command prompt.
 
 Note that in the exam environment `vi` is aliased to `vim`. `vi` is an older editor and does not read the following configuration.
 In KodeKloud Alpine environments, this alias is not usually present so you must either create it or explicitly type `vim`
@@ -121,57 +116,7 @@ What these do, in order:
 
 ## TMUX
 
-[tmux](https://github.com/tmux/tmux/wiki) allows you to have multiple terminal panes in the exam environment. I personally use two. With two panes you can do the following which will save you time, however `tmux` isn't for the faint hearted. If you don't know it, you must practice it *a lot* in lab environments!
-
-* When debugging a YAML manifest, have the YAML open in `vi` in one pane, and a command prompt in the other...
-    1. Make edits to YAML
-    1. Save changes with `:w`
-    1. In other pane `kubectl apply -f ...`
-    1. If error in YAML repeat the above till it works
-* Where a question asks you to ssh to other nodes e.g. when doing a cluster upgrade, you can have one prompt on the control plane and the other on a worker node.
-
-### Installing in lab environments
-
-Update: It seems that `tmux` may now be installed by default in KodeKloud labs. You can check in any lab environment (KK or otherwise) by running
-
-```shell
-which tmux
-```
-
-If not, then proceed with the following:
-
-While `tmux` *is* preinstalled in the real exam and on killer.sh, in many lab environments it is not installed by default. To install it at the start of a lab session, do the following
-
-1. Determine the OS distribution<br>`cat /etc/os-release`
-1. If Ubuntu, run<br>`apt update && apt install tmux`
-1. If Alpine, run<br>`apk add tmux`
-
-### Configuration
-
-I am certainly not a `tmux` ninja, but these settings work. If you type it up as follows into the exam notepad, you can paste straight to the command prompt.
-
-```shell
-cat <<EOF > ~/.tmux.conf
-set -g mouse on
-set -g default-shell /bin/bash
-EOF
-```
-
-These settings enable the mouse for pane selection and copy-paste operations, plus ensure the shell is `bash` (otherwise it could use another default like `sh`).
-
-Run `tmux` at the main exam terminal after performing the above Early Exit, `vim` and `tmux` configurations.
-
-* To create a two-pane view with a horizontal split, type `CTRL`-`B` followed by `"`
-* To create a vertical split, type `CTRL`-`B` followed by `%`
-* Cancel a split by typing `CTRL`-`D` or `exit` at one of the command prompts
-* Switch between panes by left mouse click
-* If you have enough screen real estate (eg. 4K monitor), you can create splits within splits by repeating the above key sequences, however I find that two panes is generally sufficient.
-
-**PRO TIP** The best place to practice `tmux` skills is on [Killercoda](https://killercoda.com/areas). This platform is by the same people that create killer.sh, therefore it is the closest you'll get to the real exam user interface - including the quirkiness of `tmux` which is slightly different in say KodeKloud.
-
-### Quirks
-
-For copying, pasting and selecting text to copy, be sure to hold the shift key when using the mouse to override `tmux` default mouse behaviour.
+With the new GUI desktop-based exam environment, use of `tmux` is somewhat deprecated as you can open multiple terminal windows. The one scenario where it is still useful is the case where you may have to enter the same sequence of commands at more than one node simultaneously.
 
 ## Creating and using your own aliases and exports
 
@@ -184,7 +129,14 @@ export dry='--dry-run=client -o yaml`
 
 ...etc.
 
-Again, type these to the exam notepad so you can paste them to command prompts. Since these are shell settings you need to paste them at every new shell you run - that means all panes you create in `tmux`, plus any node you ssh to if you expect to use `kubectl` commands at that node.
+Since these are shell settings, you will need to add them to `.bashrc` to ensure they are active in all terminal emulators you start, therefore at the beginning of the exam open a terminal and do
+
+```shell
+vi ~/.bashrc
+```
+
+and add your exports and aliases at the end of the file.
+
 
 # Links
 
@@ -194,6 +146,10 @@ Please note that the System/Workspace requirement data may be out of date due to
 * [Exam System Requirements](https://docs.linuxfoundation.org/tc-docs/certification/faq-cka-ckad-cks#what-are-the-system-requirements-to-take-the-exam)
 * [Exam Workspace Requirements](https://docs.linuxfoundation.org/tc-docs/certification/faq-cka-ckad-cks#what-are-the-testing-environment-requirements-to-take-the-exam)
 * [Exam ID requirements](https://docs.linuxfoundation.org/tc-docs/certification/faq-cka-ckad-cks#what-are-the-id-requirements-to-take-the-exam)
+
+## All Exams
+
+* [Exam Desktop](https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2/exam-user-interface)
 
 ## CKA/CKAD
 
