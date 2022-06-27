@@ -45,7 +45,7 @@ Beginning June 25 2022, the exam is now delivered via the PSI Secure Browser whi
     * `Terminal Emulator` - you may open as many terminal windows as you like.
     * `File Manager`
     * `Text Editor` - you may still prefer to use `vi` in a terminal to edit YAML files, as plain old text editor won't be as smart and may insert TAB characters with will break `kubectl`!
-    * `Firefox` - is included on the desktop for viewing permitted documentation. They helpfully pass this through a proxy which blocks access to all but permitted documentation, so no chance of accidentally going elsewhere. You may open multiple tabs in Firefox.
+    * `Firefox` - is included on the desktop for viewing documentation. They helpfully pass this through a proxy which blocks access to all but permitted documentation, so no chance of accidentally going elsewhere. You may open multiple tabs in Firefox.
 * Links to documentation, *considered most helpful to complete your work*, have been added to a Quick Reference box within each item’s instructions.
 * Until such time as killer.sh may or may not update their user interface, it will no longer be a close representation of the real exam environment. You should still do killer though, for the question experience.
 * On a lighter note, there should be fewer issues connecting with the proctor and getting screen sharing working.
@@ -75,8 +75,6 @@ vi my-pod.yaml
 kubectl create -f my-pod.yaml
 ```
 
-For objects that can't be created imperatively like Persistent Volumes, it is useful to have bookmarks directly to the YAML for these so you can copy/paste them before editing.
-
 # Exam Environment Configuration
 
 You are not allowed to paste any settings into the terminal (e.g. aliases, dotfiles etc) from another source. You must commit all these to memory and type them in at the beginning.
@@ -89,10 +87,9 @@ Below are my personal preferences. You can and should practice these in all popu
 
 Since the exam desktop does not come with an IDE (VSCode, Intellij etc.) I would still advise you to use `vi` in a terminal window for YAML editing, as if you know your `vi` commands, it's easier to get the formatting right.
 
-I'm no `vi` expert, but these settings work well for YAML editing. If you type it up as follows into the exam notepad, you can paste straight to the command prompt.
+Note that in the exam environment `vi` is aliased to `vim`. `vi` is an older editor and does not read the following configuration. In KodeKloud Alpine environments, this alias is not always present so you must either create it or explicitly type `vim`
 
-Note that in the exam environment `vi` is aliased to `vim`. `vi` is an older editor and does not read the following configuration.
-In KodeKloud Alpine environments, this alias is not usually present so you must either create it or explicitly type `vim`
+I'm no `vi` expert, but these settings work well for YAML editing. If you type it up as follows into the exam notepad, you can paste straight to the command prompt.
 
 ```shell
 cat <<EOF > ~/.vimrc
@@ -116,7 +113,7 @@ What these do, in order:
 
 ## TMUX
 
-With the new GUI desktop-based exam environment, use of `tmux` is somewhat deprecated as you can open multiple terminal windows. The one scenario where it is still useful is the case where you may have to enter the same sequence of commands at more than one node simultaneously.
+With the new GUI desktop-based exam environment, use of `tmux` is somewhat deprecated as you can open multiple terminal windows. The one scenario where it is still useful is the case where you may want to enter the [same sequence of commands](https://medium.com/@thehackadda/synchronize-panes-in-tmux-5cd6bc54ca83) at more than one node simultaneously. Ensure you have `ssh`-ed to the target nodes in each pane before activating sync.
 
 ## Creating and using your own aliases and exports
 
@@ -140,7 +137,6 @@ and add your exports and aliases at the end of the file.
 
 # Links
 
-Please note that the System/Workspace requirement data may be out of date due to the new [PSI Bridge](https://training.linuxfoundation.org/bridge-migration-2021/) environment. The PSI Bridge information should be treated as current. I will monitor these links and update them as things change.
 ## Pre-Exam
 
 * [Exam System Requirements](https://docs.linuxfoundation.org/tc-docs/certification/faq-cka-ckad-cks#what-are-the-system-requirements-to-take-the-exam)
