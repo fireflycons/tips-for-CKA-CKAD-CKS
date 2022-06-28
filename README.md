@@ -64,9 +64,9 @@ Once the proctor is satisfied and launches the exam, this is what you will get.
     * **NOTE** You won't be asked to install anything (e.g. CNI plugins) for which a link isn't present in the allowed docs. You will be provided with a link in the question.
 * Until such time as killer.sh update their user interface, it will no longer be a close representation of the real exam environment, however they are now working on it - [preview here](https://killercoda.com/kimwuestkamp/scenario/cks-cka-ckad-remote-desktop). You should still do killer though, even on the old UI for the question experience.
 
-**PRO TIP** Know as many imperative commands as you can. This will reduce the amount of YAML editing you need to do. For example if you are asked to create an nginx pod and set up a volume mount inside it, create the pod imperatively, then only make necessary edits to YAML to add the volume...
-
 Please read https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2/exam-user-interface.
+
+**PRO TIP** Know as many imperative commands as you can. This will reduce the amount of YAML editing you need to do. For example if you are asked to create an nginx pod and set up a volume mount inside it, create the pod imperatively, then only make necessary edits to YAML to add the volume...
 
 ```shell
 kubectl run my-pod --image=nginx --dry=run=client -o yaml > my-pod.yaml
