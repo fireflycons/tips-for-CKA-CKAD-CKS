@@ -26,46 +26,47 @@ I think take the following into consideration.
 * Make sure there are no objects (other than furniture) within 2 metres of where you are sitting, other than the computer equipment required for the exam. You are also allowed water in a clear glass. No pens, paper, books, electronics or any other clutter or anything with text on (that could be seen by proctor as a cheat sheet), including on the walls.
 * There is now going to be a pre check-in facility where you can upload a photo of yourself, your ID and a video of your work area.
 * Remove smart watches.
-* Make sure you can move your camera. Proctor will want a 360 degree sweep of the area, and will want to see under your desk.
 * If there are removable drawers in your desk, best to remove them.
 * Anything that's not easily moved like a big bookshelf, throw a sheet over it.
-* Multiple monitors are not allowed as of June 2022. If you have more than one monitor, remove the others. If you have a laptop with an external monitor and the external monitor is better than the laptop display, then you must work with the laptop lid closed ensuring that the laptop display is disabled (your display settings should only register the external monitor), and connect USB keyboard/mouse/camera.
-* If you live in an area with a high chance of power cuts, consider tethering your laptop to your phone. Ensure both are fully charged and will last the (anything up to 3 hours) required including proctor setup. If you have a desktop computer consider buying a small UPS. Make sure that if you are tethering to mobile, that your mobile is well out of reach, covered and in silent mode.
-* If you have made changes to your normal environment to fit the exam conditions (e.g. any of the above), test it thoroughly in advance of exam day!
 
 # Your Workstation
 
 Beginning June 25 2022, the exam is now delivered via the PSI Secure Browser which is software you must install from a download link provided during the exam registration process. There are some important points to note
 
 * Since this is a custom browser, you do not have the ability to use pre-prepared bookmarks.
-* The "base node", i.e. the system from which you conduct the exam is an Ubuntu 20.04 desktop environment.
-* You are allowed to use any of the utilities that are included with the desktop, which includes and is not limited to
-    * `Terminal Emulator` - you may open as many terminal windows as you like.
-    * `File Manager`
-    * `Text Editor` - you may still prefer to use `vi` in a terminal to edit YAML files, as plain old text editor won't be as smart and may insert TAB characters with will break `kubectl`!
-    * `Firefox` - is included on the desktop for viewing documentation. They helpfully pass this through a proxy which blocks access to all but permitted documentation, so no chance of accidentally going elsewhere. You may open multiple tabs in Firefox.
-* Links to documentation, *considered most helpful to complete your work*, have been added to a Quick Reference box within each item’s instructions.
-* Until such time as killer.sh update their user interface, it will no longer be a close representation of the real exam environment, however they are now working on it - [preview here](https://killercoda.com/kimwuestkamp/scenario/cks-cka-ckad-remote-desktop). You should still do killer though, even on the old UI for the question experience.
-* On a lighter note, there should be fewer issues connecting with the proctor and getting screen sharing working.
+* Make sure you can move your camera. Proctor will want a 360 degree sweep of the area, and will want to see under your desk.
+* Multiple monitors are not allowed as of June 2022. If you have more than one monitor, remove the others. If you have a laptop with an external monitor and the external monitor is better than the laptop display, then you must work with the laptop lid closed ensuring that the laptop display is disabled (your display settings should only register the external monitor), and connect USB keyboard/mouse/camera.
+* If you live in an area with a high chance of power cuts, consider tethering your laptop to your phone. Ensure both are fully charged and will last the (anything up to 3 hours) required including proctor setup. If you have a desktop computer consider buying a small UPS. Make sure that if you are tethering to mobile, that your mobile is well out of reach, covered and in silent mode.
+* If you have made changes to your normal environment to fit the exam conditions (e.g. any of the above), test it thoroughly in advance of exam day!
+* On a lighter note, there *should* be fewer issues connecting with the proctor and getting screen sharing working.
 
 Additionally
 
 * Ensure no other foreground processes are running.
 * If you have phone integration software (e.g. My Phone on Windows), ensure this is disabled.
 
-Please read https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2/exam-user-interface.
 
 # The Exam Portal
 
 Once the proctor is satisfied and launches the exam, this is what you will get.
 
+* The "base node", i.e. the system from which you conduct the exam is an Ubuntu 20.04 desktop environment. It is entered via the Remote Desktop control near the top.
+* You are allowed to use any of the utilities that are included with the desktop, which includes and is not limited to
+    * `Terminal Emulator` - you may open as many terminal windows as you like.
+    * `File Manager`
+    * `Text Editor` - you may still prefer to use `vi` in a terminal to edit YAML files, as plain old text editor won't be as smart and may insert TAB characters with will break `kubectl`!
+    * `Firefox` - is included on the desktop for viewing documentation. They helpfully pass this through a proxy which blocks access to all but permitted documentation, so no chance of accidentally going elsewhere. You may open multiple tabs in Firefox.
+* Links to documentation, *considered most helpful to complete your work*, have been added to a Quick Reference box within each item’s instructions.
 * The `k` alias and bash autocomplete for `kubectl` are also pre-configured, so will function in all terminal windows launched. You only need to add other aliases and exports to help you.
 * Editors `vim` (`vi`) and `nano` are pre-installed. You may also use the desktop's Text Editor, but not really recommended for YAML editing.
 * The Secure Browser includes a notepad feature (part of Secure Browser and separate from the Linux desktop) into which you can make notes during the exam - you can also use Text Editor on the desktop. Pen and paper is not allowed.
 * You may not install additional software from package repos or other locations except when directed by an exam question, and only from the links it gives you.
     * **NOTE** You won't be asked to install anything (e.g. CNI plugins) for which a link isn't present in the allowed docs. You will be provided with a link in the question.
+* Until such time as killer.sh update their user interface, it will no longer be a close representation of the real exam environment, however they are now working on it - [preview here](https://killercoda.com/kimwuestkamp/scenario/cks-cka-ckad-remote-desktop). You should still do killer though, even on the old UI for the question experience.
 
 **PRO TIP** Know as many imperative commands as you can. This will reduce the amount of YAML editing you need to do. For example if you are asked to create an nginx pod and set up a volume mount inside it, create the pod imperatively, then only make necessary edits to YAML to add the volume...
+
+Please read https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2/exam-user-interface.
 
 ```shell
 kubectl run my-pod --image=nginx --dry=run=client -o yaml > my-pod.yaml
