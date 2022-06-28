@@ -45,7 +45,7 @@ Beginning June 25 2022, the exam is now delivered via the PSI Secure Browser whi
     * `Text Editor` - you may still prefer to use `vi` in a terminal to edit YAML files, as plain old text editor won't be as smart and may insert TAB characters with will break `kubectl`!
     * `Firefox` - is included on the desktop for viewing documentation. They helpfully pass this through a proxy which blocks access to all but permitted documentation, so no chance of accidentally going elsewhere. You may open multiple tabs in Firefox.
 * Links to documentation, *considered most helpful to complete your work*, have been added to a Quick Reference box within each item’s instructions.
-* Until such time as killer.sh may or may not update their user interface, it will no longer be a close representation of the real exam environment. You should still do killer though, for the question experience.
+* Until such time as killer.sh update their user interface, it will no longer be a close representation of the real exam environment. You should still do killer though, for the question experience. They are now working on it. [Preview here](https://killercoda.com/kimwuestkamp/scenario/cks-cka-ckad-remote-desktop).
 * On a lighter note, there should be fewer issues connecting with the proctor and getting screen sharing working.
 
 Additionally
