@@ -54,12 +54,11 @@ Once the proctor is satisfied and launches the exam, this is what you will get.
 * You are allowed to use any of the utilities that are included with the desktop, which includes and is not limited to
     * `Terminal Emulator` - you may open as many terminal windows as you like.
     * `File Manager`
-    * `Text Editor` - you may still prefer to use `vi` in a terminal to edit YAML files, as plain old text editor won't be as smart and may insert TAB characters with will break `kubectl`!
+    * `Text Editor` - (probably called `Mousepad`) can be used to take notes in place of the old Exam Notepad.
     * `Firefox` - is included on the desktop for viewing documentation. They helpfully pass this through a proxy which blocks access to all but permitted documentation, so no chance of accidentally going elsewhere. You may open multiple tabs in Firefox.
 * Links to documentation, *considered most helpful to complete your work*, have been added to a Quick Reference box within each item’s instructions.
 * The `k` alias and bash autocomplete for `kubectl` are also pre-configured, so will function in all terminal windows launched. You only need to add other aliases and exports to help you.
 * Editors `vim` (`vi`) and `nano` are pre-installed. You may also use the desktop's Text Editor, but not really recommended for YAML editing.
-* The Secure Browser includes a notepad feature (part of Secure Browser and separate from the Linux desktop) into which you can make notes during the exam - you can also use Text Editor on the desktop. Pen and paper is not allowed.
 * You may not install additional software from package repos or other locations except when directed by an exam question, and only from the links it gives you.
     * **NOTE** You won't be asked to install anything (e.g. CNI plugins) for which a link isn't present in the allowed docs. You will be provided with a link in the question.
 * Until such time as killer.sh update their user interface, it will no longer be a close representation of the real exam environment, however they are now working on it - [preview here](https://killercoda.com/kimwuestkamp/scenario/cks-cka-ckad-remote-desktop). You should still do killer though, even on the old UI for the question experience.
@@ -78,8 +77,6 @@ kubectl create -f my-pod.yaml
 
 You are not allowed to paste any settings into the terminal (e.g. aliases, dotfiles etc) from another source. You must commit all these to memory and type them in at the beginning.
 
-I found that as soon as the portal was launched, and while the environment was creating that I could start typing these into the exam notepad. By the time the command prompt appeared, I was mostly done and it was a simple copy/paste from the exam notepad to the terminal. This will save you up to a minute depending on how many aliases, config items etc you want to use.
-
 Below are my personal preferences. You can and should practice these in all popular lab environments like KodeKloud and Killercoda and also when you get to it, killer.sh.
 
 ## VIM (VI)
@@ -88,17 +85,17 @@ Since the exam desktop does not come with an IDE (VSCode, Intellij etc.) I would
 
 Note that in the exam environment `vi` is aliased to `vim`. `vi` is an older editor and does not read the following configuration. In KodeKloud Alpine environments, this alias is not always present so you must either create it or explicitly type `vim`
 
-I'm no `vi` expert, but these settings work well for YAML editing. If you type it up as follows into the exam notepad, you can paste straight to the command prompt.
+I'm no `vi` expert, but these settings work well for YAML editing.
+
+In a terminal at the start of the exam, do `vi ~./vimrc`, enter up the following and save
 
 ```shell
-cat <<EOF > ~/.vimrc
 set nu
 set sw=2
 set et
 set ts=2
 set ai
 set pastetoggle=<F3>
-EOF
 ```
 
 What these do, in order:
