@@ -71,7 +71,7 @@ You are allowed to launch the session 30 minutes before your scheduled time. You
 
 Once the proctor is satisfied and launches the exam, this is what you will get.
 
-* The "base node", i.e. the system from which you conduct the exam is an Ubuntu 20.04 desktop environment. It is entered via the Remote Desktop control near the top.
+* The "base node", i.e. the system from which you conduct the exam is an XFCE desktop on Ubuntu 20.04. It is entered via the Remote Desktop control near the top.
 * You are allowed to use any of the utilities that are included with the desktop, which includes and is not limited to
     * `Terminal Emulator` - you may open as many terminal windows as you like.
     * `File Manager` - May or may not be of use. Remember that it can only see the file system of the desktop host, not any other host that may be involved in the exam. Note also that the host that the terminal emulator opens on is _not_ the desktop host. I have tested this - any files created in the home directory in the terminal do not show in the home directory that File Manager is looking at!
