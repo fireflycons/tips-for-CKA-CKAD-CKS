@@ -22,27 +22,29 @@ I think take the following into consideration.
 * Between scheduling and taking, do the second killer session. You will get the same questions so it should be easy this time.
 * Take the exam - good luck!
 
-# Proctor and Workspace
+# Workspace Preparation
+
+The area about your person and around where you will be sitting must be completely free of clutter, distractions and anything that the proctor may consider that you could be using to gain some sort of advantage.
 
 * Make sure there are no objects (other than furniture) within 2 metres of where you are sitting, other than the computer equipment required for the exam. You are also allowed water in a clear glass. No pens, paper, books, electronics or any other clutter or anything with text on (that could be seen by proctor as a cheat sheet), including on the walls.
-* There is now going to be a pre check-in facility where you can upload a photo of yourself, your ID and a video of your work area.
 * Remove smart watches.
 * If there are removable drawers in your desk, best to remove them.
 * Anything that's not easily moved like a big bookshelf, throw a sheet over it.
 
 # Your Workstation
 
+* Do not use a workstation belonging to your employer, unless you have the ability to use an admin account on it.
 * Since this is a custom browser, you do not have the ability to use pre-prepared bookmarks.
-* Make sure you can move your camera.
+* Make sure you can move your camera. A plug-in USB camera on a long lead is recommended to facilitate the check in process (see Launching the exam below).
 * Multiple monitors are not allowed as of June 2022. If you have more than one monitor, remove the others. If you have a laptop with an external monitor and the external monitor is better than the laptop display, then you must work with the laptop lid closed ensuring that the laptop display is disabled (your display settings should only register the external monitor), and connect USB keyboard/mouse/camera.
-* If you live in an area with a high chance of power cuts, consider tethering your laptop to your phone. Ensure both are fully charged and will last the (anything up to 3 hours) required including proctor setup. If you have a desktop computer consider buying a small UPS. Make sure that if you are tethering to mobile, that your mobile is well out of reach, covered and in silent mode.<br>**IMPORTANT** This method has not yet been proven, so raise a ticket with Linux Foundation to check that use of phone wi-fi is acceptable.
-* If you have made changes to your normal environment to fit the exam conditions (e.g. any of the above), test it thoroughly in advance of exam day!
+* If you live in an area with a high chance of power cuts, consider tethering your laptop to your phone. Ensure both are fully charged and will last the (anything up to 3 hours) required including proctor setup. If you have a desktop computer consider buying a small UPS. <br>**IMPORTANT** This method has not yet been proven, so raise a ticket with Linux Foundation to check that use of phone wi-fi is acceptable.
 * You are _strongly_ recommended to use a high-res monitor, e.g. 4K or close. If you're only using a standard 1920x1080 HD display, you will get very little screen real-estate for the Linux desktop environment, due to the side panel for the questions, and the control menu bar at the top.
+* If you have made changes to your normal environment to fit the exam conditions (e.g. any of the above), test it thoroughly in advance of exam day!
 * On a lighter note, there *should* be fewer issues connecting with the proctor and getting screen sharing working.
 
 Additionally
 
-* Log into your computer using an account with Admin/root privilege - you'll need it during preparation.
+* Log into your computer using an account with admin/root privilege - you'll need it during preparation.
 
 # Launching the Exam.
 
@@ -62,10 +64,10 @@ You are allowed to launch the session 30 minutes before your scheduled time. You
    1. Perform a 360 degree sweep of the room beginning with the wall on your left
    1. Perform a sweep of your desk area from floor up to ceiling
    1. Perform a sweep of your desktop from left to right, finishing with showing your phone and then placing it out of reach behind you.
-   1. Perform a sweep of your head, showing both ears (they're looking for ear buds), and any eye wear.
+   1. Perform a sweep of your head, showing both ears (they're looking for ear buds), and any eye wear. If you wear in-hear hearing aids you may consider removing these also, as the proctor will only ever communicate with you via the chat box.
    1. Perform a sweep of both wrists to prove the absence of smart-wear.
    1. Take a photo of your face, sort of passport perspective.
-* Once you have completed all the above, you then wait until the proctor activates the chat window and gives final instructions. If you have followed all of the above well, then the proctor should allow you to proceed to the exam, otherwise he may ask you to re-show him stuff with the camera/move stuff etc.
+* Once you have completed all the above, you then wait until the proctor activates the chat window and gives final instructions. If you have followed all of the above well, then the proctor should allow you to proceed to the exam, otherwise you may be asked to move things around and re-show areas with the camera.
 
 # The Exam Portal
 
@@ -74,7 +76,7 @@ Once the proctor is satisfied and launches the exam, this is what you will get.
 * The "base node", i.e. the system from which you conduct the exam is an XFCE desktop on Ubuntu 20.04. It is entered via the Remote Desktop control near the top.
 * You are allowed to use any of the utilities that are included with the desktop, which includes and is not limited to
     * `Terminal Emulator` - you may open as many terminal windows as you like.
-    * `File Manager` - May or may not be of use. Remember that it can only see the file system of the desktop host, not any other host that may be involved in the exam. Note also that the host that the terminal emulator opens on is _not_ the desktop host. I have tested this - any files created in the home directory in the terminal do not show in the home directory that File Manager is looking at!
+    * `File Manager` - Unlikely to be of use. Bear in mind that it can only see the file system of the desktop host, not any other host that may be involved in the exam. Note also that the host that the terminal emulator opens on is _not_ the desktop host. I have tested this - any files created in the home directory in the terminal do not show in the home directory that File Manager is looking at!
     * `Text Editor` - (called `Mousepad`) can be used to take notes in place of the old Exam Notepad. **Remember** that the desktop filesystem is _not_ the same file system as the terminal emulator, so you can't edit YAML in this then expect to find the saved file in the terminal's filesystem!
     * `Firefox` - is included on the desktop for viewing documentation. They helpfully pass this through a proxy which blocks access to all but permitted documentation, so no chance of accidentally going elsewhere. You may open multiple tabs in Firefox.
 * Links to documentation, *considered most helpful to complete your work*, have been added to a Quick Reference box within each item’s instructions. Clicking on any of these links opens a tab in Firefox.
@@ -101,7 +103,7 @@ Since the launch of the new portal, many issues have been raised about lag (unre
 As for copy/paste:
 * To copy from the question panel, click `Copy` link with the mouse where it is present, else a click on highlighted text auto-copies it (even when the `Copy` link appears with mouse hover - you can't actually click that).
 * To copy and paste _within_ the desktop, it's easiest to use the right-click context menu - I know some of you would prefer to use keyboard shortcuts.
-* Shift + double click will select words, filepaths etc in the terminal.
+* Shift + double click will select words, filepaths etc in the terminal. Shift + Drag to select multiple words/lines.
 * I could not get `pastetoggle` to work in `vi` for some reason. This means you have to enter the `:set paste` and `:set nopaste` commands in normal mode.
 
 Please read https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2/exam-user-interface.
