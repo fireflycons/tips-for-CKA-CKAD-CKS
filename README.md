@@ -98,7 +98,7 @@ Edit -> Preferences
 
 ## Issues with the Exam Portal
 
-Since the launch of the new portal, many issues have been raised about lag (unresponsiveness of the desktop), copy/paste issues and the like. Personally (and having to use an Amazon Workspace in my job), I found the lag was about as expected. There were issues with the exam portal not being launched in the examinee's closest cloud region, but I think those have been resolved now.
+Since the launch of the new portal, many issues have been raised about lag (unresponsiveness of the desktop), copy/paste issues and the like. Personally (and having to use an Amazon Workspace in my job), I found the lag was about as expected. There were issues with the exam portal not being launched in the examinee's closest cloud region which would have caused unacceptable lag, but I think those have been resolved now.
 
 As for copy/paste:
 * To copy from the question panel, click `Copy` link with the mouse where it is present, else a click on highlighted text auto-copies it (even when the `Copy` link appears with mouse hover - you can't actually click that).
