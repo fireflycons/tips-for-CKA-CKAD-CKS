@@ -64,7 +64,7 @@ You are allowed to launch the session 30 minutes before your scheduled time. You
    1. Perform a 360 degree sweep of the room beginning with the wall on your left
    1. Perform a sweep of your desk area from floor up to ceiling
    1. Perform a sweep of your desktop from left to right, finishing with showing your phone and then placing it out of reach behind you.
-   1. Perform a sweep of your head, showing both ears (they're looking for ear buds), and any eye wear. If you wear in-hear hearing aids you may consider removing these also, as the proctor will only ever communicate with you via the chat box.
+   1. Perform a sweep of your head, showing both ears (they're looking for ear buds), and any eye wear. If you wear in-ear hearing aids you may consider removing these also, as the proctor will only ever communicate with you via the chat box.
    1. Perform a sweep of both wrists to prove the absence of smart-wear.
    1. Take a photo of your face, sort of passport perspective.
 * Once you have completed all the above, you then wait until the proctor activates the chat window and gives final instructions. If you have followed all of the above well, then the proctor should allow you to proceed to the exam, otherwise you may be asked to move things around and re-show areas with the camera.
