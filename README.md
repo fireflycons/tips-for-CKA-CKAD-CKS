@@ -102,8 +102,11 @@ Since the launch of the new portal, many issues have been raised about lag (unre
 
 As for copy/paste:
 * To copy from the question panel, click `Copy` link with the mouse where it is present, else a click on highlighted text auto-copies it (even when the `Copy` link appears with mouse hover - you can't actually click that).
-* To copy and paste _within_ the desktop, it's easiest to use the right-click context menu - I know some of you would prefer to use keyboard shortcuts.
-* Shift + double click will select words, filepaths etc in the terminal. Shift + Drag to select multiple words/lines.
+* What should work (within the Desktop environment)
+    * In terminal emulator - `CTRL + SHIFT + C` and `CTRL + SHIFT + V`
+    * In other apps like Firefox - `CTRL + C` and `CTRL + V`
+* What works in all desktop apps - Right mouse context menu
+* Shift + double click will select words, file paths etc in the terminal. Shift + Drag to select multiple words/lines.
 * I could not get `pastetoggle` to work in `vi` for some reason. This means you have to enter the `:set paste` and `:set nopaste` commands in normal mode.
 
 Please read https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2/exam-user-interface.
