@@ -37,8 +37,8 @@ The area about your person and around where you will be sitting must be complete
 * Since this is a custom browser, you do not have the ability to use pre-prepared bookmarks.
 * Make sure you can move your camera. A plug-in USB camera on a long lead is recommended to facilitate the check in process (see Launching the exam below).
 * Multiple monitors are not allowed as of June 2022. If you have more than one monitor, remove the others. If you have a laptop with an external monitor and the external monitor is better than the laptop display, then you must work with the laptop lid closed ensuring that the laptop display is disabled (your display settings should only register the external monitor), and connect USB keyboard/mouse/camera.
-* If you live in an area with a high chance of power cuts, consider tethering your laptop to your phone. Ensure both are fully charged and will last the (anything up to 3 hours) required including proctor setup. If you have a desktop computer consider buying a small UPS. <br>**IMPORTANT** This method has not yet been proven, so raise a ticket with Linux Foundation to check that use of phone wi-fi is acceptable.
 * You are _strongly_ recommended to use a high-res monitor, e.g. 4K or close. If you're only using a standard 1920x1080 HD display, you will get very little screen real-estate for the Linux desktop environment, due to the side panel for the questions, and the control menu bar at the top.<br>You are not recommended to use a small laptop display (like 13 or 14 inch) that you have to use scaling on to be able to read the text. Anything other than 100% scale and you'll be seriously disadvantaged!
+* If you live in an area with a high chance of power cuts, consider tethering your laptop to your phone. Ensure both are fully charged and will last the (anything up to 3 hours) required including proctor setup. If you have a desktop computer consider buying a small UPS. <br>**IMPORTANT** This method has not yet been proven, so raise a ticket with Linux Foundation to check that use of phone wi-fi is acceptable.
 * If you have made changes to your normal environment to fit the exam conditions (e.g. any of the above), test it thoroughly in advance of exam day!
 * On a lighter note, there *should* be fewer issues connecting with the proctor and getting screen sharing working.
 
@@ -99,6 +99,8 @@ Edit -> Preferences
 ## Issues with the Exam Portal
 
 Since the launch of the new portal, many issues have been raised about lag (unresponsiveness of the desktop), copy/paste issues and the like. Personally (and having to use an Amazon Workspace in my job), I found the lag was about as expected. There were issues with the exam portal not being launched in the examinee's closest cloud region which would have caused unacceptable lag, but I think those have been resolved now.
+
+Some people have also said that when complaining to the proctor about lag, the proctor has said that it must be the broadband. The [system requirements](https://helpdesk.psionline.com/hc/en-gb/articles/4409608794260-PSI-Bridge-Platform-System-Requirements) state "minimum 300kbps up/down", so don't accept that. Even ADSL should meet that requirement! You may consider verifying your connection speed with something like https://www.speedtest.net/ before launching the exam. Take note of the latency figures (smaller numbers below the download/upload speeds). If these are high, you may have issues.
 
 As for copy/paste:
 * To copy from the question panel, click `Copy` link with the mouse where it is present, else a click on highlighted text auto-copies it (even when the `Copy` link appears with mouse hover - you can't actually click that).
