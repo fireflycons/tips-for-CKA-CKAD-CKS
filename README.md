@@ -127,7 +127,7 @@ Below are my personal preferences. You can and should practice these in all popu
 
 ## VIM (VI)
 
-Since the exam desktop does not come with an IDE (VSCode, Intellij etc.) I would still advise you to use `vi` in a terminal window for YAML editing, as if you know your `vi` commands, it's easier to get the formatting right.
+Since the exam desktop does not come with an IDE (VSCode, Intellij etc.) you will need to use a terminal-based text editor such as `vi` for YAML editing, and if you know your `vi` commands, it's easier to get the formatting right. You can use `nano`, but you will be much quicker if you take the time to learn `vi` sufficiently.
 
 Note that in the exam environment `vi` is aliased to `vim`. `vi` is an older editor and does not read the following configuration. In KodeKloud Alpine environments, this alias is not always present so you must either create it or explicitly type `vim`
 
