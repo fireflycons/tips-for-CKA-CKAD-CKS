@@ -85,7 +85,7 @@ Once the proctor is satisfied and launches the exam, this is what you will get.
 * Editors `vim` (`vi`) and `nano` are pre-installed.
 * You may not install additional software from package repos or other locations except when directed by an exam question, and only from the links it gives you.
     * **NOTE** You won't be asked to install anything (e.g. CNI plugins) for which a link isn't present in the allowed docs. You will be provided with a link in the question.
-* Until such time as killer.sh update their user interface, it will no longer be a close representation of the real exam environment, however they are now working on it - [preview here](https://killercoda.com/kimwuestkamp/scenario/cks-cka-ckad-remote-desktop). You should still do killer though, even on the old UI for the question experience.
+* There is a simulation of the exam environment [here](https://killercoda.com/kimwuestkamp/scenario/cks-cka-ckad-remote-desktop).
 
 **A note about Terminal Emulator**
 
@@ -111,6 +111,10 @@ As for copy/paste:
 * What works in all desktop apps - Right mouse context menu
 * Shift + double click will select words, file paths etc in the terminal. Shift + Drag to select multiple words/lines.
 * I could not get `pastetoggle` to work in `vi` for some reason. This means you have to enter the `:set paste` and `:set nopaste` commands in normal mode.
+
+People have also reported not being able to do Find in Page in the browser using `CTRL + F`. If this is not working, you should be able to open the find box like this
+
+![Firefox](img/firefox.jpg)
 
 Please read https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2/exam-user-interface.
 
