@@ -49,6 +49,8 @@ Additionally
 
 # Launching the Exam.
 
+Note that you should practice getting a clear shot of your ID using your webcam *well before* exam day. Even consider building something to hold the ID card steady using your kids lego or something :-) 
+
 You are allowed to launch the session 30 minutes before your scheduled time. You will need all those 30 minutes, so connect promptly, as before you even talk to the proctor, you need to complete the self check-in process. This goes as follows:
 
 * Use the link provided to download the PSI software
@@ -220,6 +222,7 @@ and add your exports and aliases at the end of the file. Hitting `SHIFT + G` wil
 
 ## Other
 
+* [KodeKloud Community FAQ](https://github.com/kodekloudhub/community-faq)
 * [vim Cheat Sheet](https://vim.rtorr.com/)
 * [tmux Cheat Sheet](https://opensource.com/article/20/7/tmux-cheat-sheet)
 
