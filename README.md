@@ -45,7 +45,7 @@ The area about your person and around where you will be sitting must be complete
 
 Additionally
 
-* Log into your computer using an account with admin/root privilege - you'll need it during preparation.
+* Log into your computer using an account with admin/root privilege - you'll need it during preparation. **This pretty much rules out the use of any corporate device!**
 
 # Launching the Exam.
 
