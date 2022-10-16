@@ -7,6 +7,19 @@ The Certified Kubernetes exams are all online-proctored. This means that you do 
 
 They are also performance based. This means that you have to solve somewhere between 17 and 25 questions using a Linux desktop provided in the exam portal.
 
+* [Am I Ready?](#am-i-ready)
+* [Workspace Preparation](#workspace-preparation)
+* [Your Workstation](#your-workstation)
+* [Launching the Exam](#launching-the-exam)
+* [The Exam Portal](#the-exam-portal)
+    * [Issues with the Exam Portal](#issues-with-the-exam-portal)
+* [Pro Tips](#pro-tips) - Boost your productivity!
+* [Exam Environment Configuration](#exam-environment-configuration)
+    * [VIM (VI)](#vim-vi)
+    * [TMUX](#tmux)
+    * [Creating and using your own aliases and exports](#creating-and-using-your-own-aliases-and-exports)
+* [Links](#links)
+* [Specific Questions About The Exam](#specific-questions-about-the-exam)
 # Am I Ready?
 
 Always the burning question!
@@ -49,7 +62,7 @@ Additionally
 
 # Launching the Exam.
 
-Note that you should practice getting a clear shot of your ID using your webcam *well before* exam day. Even consider building something to hold the ID card steady using your kids lego or something :-) 
+Note that you should practice getting a clear shot of your ID using your webcam *well before* exam day. Even consider building something to hold the ID card steady using your kids lego or something :-)
 
 You are allowed to launch the session 30 minutes before your scheduled time. You will need all those 30 minutes, so connect promptly, as before you even talk to the proctor, you need to complete the self check-in process. This goes as follows:
 
@@ -118,16 +131,26 @@ People have also reported not being able to do Find in Page in the browser using
 
 ![Firefox](img/firefox.jpg)
 
-Please read https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2/exam-user-interface.
+Please read https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2/exam-user-interface and https://helpdesk.psionline.com/hc/en-gb/sections/360013179931-PSI-Bridge-FAQ.
 
-**PRO TIP** Know as many imperative commands as you can. This will reduce the amount of YAML editing you need to do. For example if you are asked to create an nginx pod and set up a volume mount inside it, create the pod imperatively, then only make necessary edits to YAML to add the volume...
+# Pro Tips
 
-```shell
-kubectl run my-pod --image=nginx --dry-run=client -o yaml > my-pod.yaml
-vi my-pod.yaml
-kubectl create -f my-pod.yaml
-```
+* Know as many imperative commands as you can. This will reduce the amount of YAML editing you need to do. For example if you are asked to create an nginx pod and set up a volume mount inside it, create the pod imperatively, then only make necessary edits to YAML to add the volume...
 
+    ```shell
+    kubectl run my-pod --image=nginx --dry-run=client -o yaml > my-pod.yaml
+    vi my-pod.yaml
+    kubectl create -f my-pod.yaml
+    ```
+* Know how to use terminal command history search `CTRL+R`. Instead of pressing up-arrow to look through history, type `CTRL+R` and start typing the command as you remember entering it before. Hit a cursor key to accept the suggestion, or `CTRL+C` to cancel it entirely.
+
+    ```
+    $ kubectl version
+    bck-i-search: kube_
+    ```
+* Use two terminal instances when editing/debugging YAML manifests. In one, keep `vi` open on the file you're editing. Save without exiting after each edit using `:w`. In the other terminal, run `kubectl create -f` or `kubectl apply -f` as appropriate on the saved file until it is accepted.
+
+* Know how to use the most common editing commands in `vi`, especially `Visual Line` which allows you to select a block of text, `y` (yank) for copy, `d` for cut, `p` for paste, and how to indent/outdent the selected block. Note that the copy/cut/paste commands operate on `vi`'s own paste buffer, _not_ the system clipboard.</br>See vim cheat sheet in the [links](#links) section of this document.
 # Exam Environment Configuration
 
 You are not allowed to paste any settings into the terminal (e.g. aliases, dotfiles etc) from another source. You must commit all these to memory and type them in at the beginning.
@@ -226,7 +249,7 @@ and add your exports and aliases at the end of the file. Hitting `SHIFT + G` wil
 * [vim Cheat Sheet](https://vim.rtorr.com/)
 * [tmux Cheat Sheet](https://opensource.com/article/20/7/tmux-cheat-sheet)
 
-## Specific Questions About The Exam
+# Specific Questions About The Exam
 * [Specific Questions About Exam](https://trainingsupport.linuxfoundation.org/). Login here with your Linux Foundation credentials. You can raise a ticket to ask questions about anything to do with the exam. The answers you receive here are the ultimate source of truth and trump anything you may read on this page or in any public discussion forums. Expect 2-3 days for a response.
 
 If you receive an answer from the LF ticketing system that contradicts anything you read on this page, or if you feel anything I've written here is incorrect or misleading, feel free to raise a pull request.
