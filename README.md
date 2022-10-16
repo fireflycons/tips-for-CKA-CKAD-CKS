@@ -148,6 +148,7 @@ Please read https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2/
     $ kubectl version
     bck-i-search: kube_
     ```
+    Know also the `history` command which will give you a numbered list of the commands entered during the session, and that you can re-run a numbered command by entering `!` followed by the number from the history, e.g. `!12`
 * Use two terminal instances when editing/debugging YAML manifests. In one, keep `vi` open on the file you're editing. Save without exiting after each edit using `:w`. In the other terminal, run `kubectl create -f` or `kubectl apply -f` as appropriate on the saved file until it is accepted.
 
 * Know how to use the most common editing commands in `vi`, especially `Visual Line` which allows you to select a block of text, `y` (yank) for copy, `d` for cut, `p` for paste, and how to indent/outdent the selected block. Note that the copy/cut/paste commands operate on `vi`'s own paste buffer, _not_ the system clipboard.</br>See vim cheat sheet in the [links](#links) section of this document.
