@@ -37,12 +37,14 @@ I think take the following into consideration.
 
 # Workspace Preparation
 
-The area about your person and around where you will be sitting must be completely free of clutter, distractions and anything that the proctor may consider that you could be using to gain some sort of advantage.
+The area about your person and around where you will be sitting must be completely free of clutter, distractions and anything that the proctor may consider that you could be using to gain some sort of advantage. Proctors are *very* fussy about this so the more stuff you can get out of the way before you start the process the better, or you will find it very stressful when you keep getting asked to move things and re-sweep the area with the camera.
 
 * Make sure there are no objects (other than furniture) within 2 metres of where you are sitting, other than the computer equipment required for the exam. You are also allowed water in a clear glass. No pens, paper, books, electronics or any other clutter or anything with text on (that could be seen by proctor as a cheat sheet), including on the walls.
-* Remove smart watches.
+* Remove all wristwear. Ideally wear a short-sleeve (T) shirt so it can be seen you are not concealing anything.
 * If there are removable drawers in your desk, best to remove them.
+* If you have a printer nearby, remove the paper (I was asked to do this).
 * Anything that's not easily moved like a big bookshelf, throw a sheet over it.
+* Keep your phone nearby. You will be explicitly asked to show it to the camera and then move it to a location out of reach behind you during the check in process.
 
 # Your Workstation
 
@@ -62,7 +64,11 @@ Additionally
 
 # Launching the Exam.
 
-Note that you should practice getting a clear shot of your ID using your webcam *well before* exam day. Even consider building something to hold the ID card steady using your kids lego or something :-)
+Note that you should practice getting a clear shot of your ID using your webcam *well before* exam day. Even consider building something to hold the ID card steady using your kids Lego or something :smile:.
+
+This image shows a Logitech QuickCam Pro 9000 pointed at a generic business card which is the same size as my photo ID. By mounting like this, the camera is stable and will autofocus, plus it leaves your hands free to click the button on the UI to take the shot. Be prepared to adjust the rig slightly at exam time to frame the shot correctly. This rig was used successfully in an exam I took on 23 Nov 2022.
+
+![Camera Rig](./img/external-camera-id-photo.jpg)
 
 You are allowed to launch the session 30 minutes before your scheduled time. You will need all those 30 minutes, so connect promptly, as before you even talk to the proctor, you need to complete the self check-in process. This goes as follows:
 
@@ -71,12 +77,14 @@ You are allowed to launch the session 30 minutes before your scheduled time. You
 * It will then do a system check - here is where you will need your admin privileges!
     * It will check only one monitor is active
     * It will then check for programs that should not be running, some of which may be operating system services. You have to stop all these things and keep re-running the check until it is happy. This includes, but is not limited to
-        * Any foreground process other than the PSI software
+        * Any foreground process other than the PSI software. This includes programs that may be running in the system tray (Windows)
         * Hypervisor services
+        * Cloud Drive applications (GoogleDrive, OneDrive etc.)
         * Command prompts (even if they are started by a service). This got me for a bit, as I had an Icecast server running as a service and this opened an invisible command prompt.
         * Services related to interfacing with phones.
-* Now you have to do all the photo and video fun! It is well worth having an external camera on a USB port with a fairly long cable for this. All the video segments record for 15 seconds. You get the option to re-take or continue after each photo and video. You have to
-   1. Take a photo of your ID
+* Now you have to do all the photo and video fun! It is well worth having an external camera on a USB port with a fairly long cable for this. In this part of the check-in process you may be requested to record videos, or it may be interactive with the proctor. I have experienced both cases. In the case where you record the video yourself, all the video segments record for 15 seconds. You get the option to re-take or continue after each photo and video. You have to
+   1. Take a photo of your ID. This step is usually before the proctor arrives.
+   1. The following steps may or may not be interactive with the proctor:
    1. Perform a 360 degree sweep of the room beginning with the wall on your left
    1. Perform a sweep of your desk area from floor up to ceiling
    1. Perform a sweep of your desktop from left to right, finishing with showing your phone and then placing it out of reach behind you.
@@ -98,7 +106,7 @@ Once the proctor is satisfied and launches the exam, this is what you will get.
 * Links to documentation, *considered most helpful to complete your work*, have been added to a Quick Reference box within each item’s instructions. Clicking on any of these links opens a tab in Firefox.
 * The `k` alias and bash autocomplete for `kubectl` are also pre-configured, so will function in all terminal windows launched. You only need to add other aliases and exports to help you.
 * Editors `vim` (`vi`) and `nano` are pre-installed.
-* You may not install additional software from package repos or other locations except when directed by an exam question, and only from the links it gives you.
+* You may not install additional software from package repos or other locations except when directed by an exam question, and only from the links or instructions it gives you, e.g. you can use `apt` during a cluster upgrade question, but you cannot use it to install some other utility you think would aid you.
     * **NOTE** You won't be asked to install anything (e.g. CNI plugins) for which a link isn't present in the allowed docs. You will be provided with a link in the question.
 * There is a simulation of the exam environment [here](https://killercoda.com/kimwuestkamp/scenario/cks-cka-ckad-remote-desktop).
 
