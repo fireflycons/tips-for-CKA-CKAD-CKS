@@ -197,8 +197,17 @@ What these do, in order:
 
 1. Enable line numbers
 2. Set shift width 2 chars
+
+    Note: May already be configured on exam terminal
+
 3. Expand tabs to spaces
+
+    Note: May already be configured on exam terminal
+
 4. Set tab stop to 2 chars
+
+    Note: May already be configured on exam terminal
+
 5. Enable auto indent
 6. NOTE - this was not working properly as of 2022-07-06. See Issues with Exam Portal section above.<br>Set F3 key to toggle paste mode. This is super important when pasting from the Kubernetes docs. Enter insert mode `i` then press `F3` so the bottom line reads<br>`INSERT (paste)`<br>Once you've pasted, ensure to toggle paste mode OFF again, or `TAB` key will start inserting tab characters and `kubectl` will complain!
 
