@@ -183,7 +183,7 @@ Note that in the exam environment `vi` is aliased to `vim`. `vi` is an older edi
 
 I'm no `vi` expert, but these settings work well for YAML editing.
 
-In a terminal at the start of the exam, do `vi ~./vimrc`, enter up the following and save
+In a terminal at the start of the exam, do `vi ~/.vimrc`, enter up the following and save
 
 ```shell
 set nu
