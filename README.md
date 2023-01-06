@@ -46,6 +46,8 @@ The area about your person and around where you will be sitting must be complete
 * Anything that's not easily moved like a big bookshelf, throw a sheet over it.
 * Keep your phone nearby. You will be explicitly asked to show it to the camera and then move it to a location out of reach behind you during the check in process.
 
+Please also read carefully Linux Foundation's [Exam Rules and Policies](https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2/exam-rules-and-policies)
+
 # Your Workstation
 
 * Windows is the platform that people have reported the fewest issues with. Mac should also be fine. Some people have had issues with Linux workstations. Note that only Ubuntu Bionic (18.04) and Focal (20.04) are supported, no other distro or version.
@@ -260,6 +262,7 @@ and add your exports and aliases at the end of the file. Hitting `SHIFT + G` wil
 ## All Exams
 
 * [Exam Desktop](https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2/exam-user-interface)
+* [Exam Rules and Policies](https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2/exam-rules-and-policies)
 
 ## CKA/CKAD
 
