@@ -77,7 +77,11 @@ You are allowed to launch the session 30 minutes before your scheduled time. You
 * Use the link provided to download the PSI software
 * Install and run it
 * It will then do a system check - here is where you will need your admin privileges!
-    * It will check only one monitor is active
+    * **IMPORTANT** Just because your machine passed the system check you ran from the Linux Foundation portal page _does not_ guarantee you will get through this section unscathed! That initial check is only for basic compatibility.
+    * It will check only [one monitor is active](https://github.com/kodekloudhub/community-faq#can-i-use-multiple-monitors).
+    * It will check that your microphone and camera are working.
+    * It will check that required outgoing ports are not blocked (likely if you're connected to a [corporate network](https://github.com/kodekloudhub/community-faq#can-i-use-a-corporate-device)).
+    * It may check that you are not using a VPN (not sure about this, but best you don't use one).
     * It will then check for programs that should not be running, some of which may be operating system services. You have to stop all these things and keep re-running the check until it is happy. It will offer to terminate them for you, however it is recommended you stop them yourself using recommended methods to shut down programs and services. PSI software will force-terminate which may crash your machine. Programs include, but are not limited to
         * Any foreground process other than the PSI software. This includes programs that may be running in the system tray (Windows)
         * Hypervisor services (Hyper-V, VMware, Parallels, KVM etc.)
