@@ -256,6 +256,7 @@ vi ~/.bashrc
 
 and add your exports and aliases at the end of the file. Hitting `SHIFT + G` will take you directly to the last line.
 
+After saving this, close the terminal and open a new one. Your saved settings will now be active.
 
 # Links
 
