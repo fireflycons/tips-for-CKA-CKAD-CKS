@@ -70,7 +70,7 @@ Additionally
 
 Note that you should practice getting a clear shot of your ID using your webcam *well before* exam day. Even consider building something to hold the ID card steady using your kids Lego or something :smile:.
 
-This image shows a Logitech QuickCam Pro 9000 pointed at a generic business card which is the same size as my photo ID. By mounting like this, the camera is stable and will autofocus, plus it leaves your hands free to click the button on the UI to take the shot. Be prepared to adjust the rig slightly at exam time to frame the shot correctly. This rig was used successfully in an exam I took on 23 Nov 2022.
+This image shows a Logitech QuickCam Pro 9000 pointed at a generic business card which is the same size as my photo ID. By mounting like this, the camera is stable and will autofocus, plus it leaves your hands free to click the button on the UI to take the shot. Be prepared to adjust the rig slightly at exam time to frame the shot correctly. This rig was used successfully in an exam I took in Nov 2022.
 
 ![Camera Rig](./img/external-camera-id-photo.jpg)
 
