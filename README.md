@@ -88,9 +88,11 @@ You are allowed to launch the session 30 minutes before your scheduled time. You
         * Any foreground process other than the PSI software. This includes programs that may be running in the system tray (Windows)
         * Hypervisor services (Hyper-V, VMware, Parallels, KVM etc.)
         * Docker
-        * Cloud Drive applications (GoogleDrive, OneDrive etc.)
+        * Cloud Drive applications (GoogleDrive, OneDrive, DropBox etc.)
         * Command prompts (even if they are started by a service). This got me for a bit, as I had an Icecast server running as a service and this opened an invisible command prompt.
         * Services related to interfacing with phones.
+        * Remote access services (TeamViewer, Webex, LogMeIn etc.)
+        * Collaboration software (MS Teams, Zoom, Slack etc.)
 * Now you have to do all the photo and video fun! It is well worth having an external camera on a USB port with a fairly long cable for this. In this part of the check-in process you may be requested to record videos, or it may be interactive with the proctor. I have experienced both cases. In the case where you record the video yourself, all the video segments record for 15 seconds. You get the option to re-take or continue after each photo and video. You have to
    1. Take a photo of your ID. This step is usually before the proctor arrives.
    1. The following steps may or may not be interactive with the proctor:
