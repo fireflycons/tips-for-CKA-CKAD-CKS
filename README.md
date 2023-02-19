@@ -16,9 +16,8 @@ They are also performance based. This means that you have to solve somewhere bet
 * [Pro Tips](#pro-tips) - Boost your productivity!
 * [Exam Environment Configuration](#exam-environment-configuration)
     * [VIM (VI)](#vim-vi)
-    * [TMUX](#tmux)
     * [Creating and using your own aliases and exports](#creating-and-using-your-own-aliases-and-exports)
-* [Links](#links)
+    * [TMUX](#tmux)
 * [Specific Questions About The Exam](#specific-questions-about-the-exam)
 # Am I Ready?
 
@@ -222,23 +221,6 @@ What these do, in order:
 5. Enable auto indent
 6. NOTE - this was not working properly as of 2022-07-06. See Issues with Exam Portal section above.<br>Set F3 key to toggle paste mode. This is super important when pasting from the Kubernetes docs. Enter insert mode `i` then press `F3` so the bottom line reads<br>`INSERT (paste)`<br>Once you've pasted, ensure to toggle paste mode OFF again, or `TAB` key will start inserting tab characters and `kubectl` will complain!
 
-## TMUX
-
-With the new GUI desktop-based exam environment, use of `tmux` is somewhat deprecated as you can open multiple terminal windows. The one scenario where it is still useful is the case where you may want to enter the [same sequence of commands](https://medium.com/@thehackadda/synchronize-panes-in-tmux-5cd6bc54ca83) at more than one node simultaneously. Ensure you have `ssh`-ed to the target nodes in each pane before activating sync.
-
-If you have a low res monitor, such that the desktop area is really small, you may still consider `tmux` in a single terminal window.
-
-Here is a workable `tmux` configuration that supports mouse selection of panes and `CTRL + X` to toggle sync mode. If using `tmux`, enter the following to a terminal window at the start of the exam.
-
-```shell
-
-cat << EOF > ~/.tmux.conf
-set -g default-shell /bin/bash
-set -g mouse on
-bind -n C-x setw synchronize-panes
-EOF
-```
-
 ## Creating and using your own aliases and exports
 
 You may want to do this to gain extra speed, for instance
@@ -259,6 +241,24 @@ vi ~/.bashrc
 and add your exports and aliases at the end of the file. Hitting `SHIFT + G` will take you directly to the last line.
 
 After saving this, close the terminal and open a new one. Your saved settings will now be active.
+
+## TMUX
+
+With the new GUI desktop-based exam environment, use of `tmux` is somewhat deprecated as you can open multiple terminal windows. The one scenario where it is still useful is the case where you may want to enter the [same sequence of commands](https://medium.com/@thehackadda/synchronize-panes-in-tmux-5cd6bc54ca83) at more than one node simultaneously. Ensure you have `ssh`-ed to the target nodes in each pane before activating sync.
+
+If you have a low res monitor, such that the desktop area is really small, you may still consider `tmux` in a single terminal window.
+
+Here is a workable `tmux` configuration that supports mouse selection of panes and `CTRL + X` to toggle sync mode. If using `tmux`, enter the following to a terminal window at the start of the exam.
+
+```shell
+
+cat << EOF > ~/.tmux.conf
+set -g default-shell /bin/bash
+set -g mouse on
+bind -n C-x setw synchronize-panes
+EOF
+```
+
 
 # Links
 
