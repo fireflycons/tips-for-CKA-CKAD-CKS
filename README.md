@@ -116,7 +116,19 @@ Once the proctor is satisfied and launches the exam, this is what you will get.
 * Links to documentation, *considered most helpful to complete your work*, have been added to a Quick Reference box within each item’s instructions. Clicking on any of these links opens a tab in Firefox.
 * The `k` alias and bash autocomplete for `kubectl` are also pre-configured, so will function in all terminal windows launched. You only need to add other aliases and exports to help you.
 * Editors `vim` (`vi`) and `nano` are pre-installed.
-* You may not install additional software from package repos or other locations except when directed by an exam question, and only from the links or instructions it gives you, e.g. you can use `apt` during a cluster upgrade question, but you cannot use it to install some other utility you think would aid you.
+* You may use any program that is already installed on the terminal.
+* You may install additional packages if they are part of the operating system distribution. What this means is that you may use `apt install` to install anything that is available by default on the terminal. The only package repo you may add if it is not already present is that for the Kubernetes distribution (to download kubeadm, kubectl, kubelet).
+    * To see what is already installed
+        ```
+        apt list --installed
+        ```
+    * To see what is available
+        ```
+        apt update
+        apt list | grep -v installed
+        ```
+        There is *a lot* of output. Filter further by piping to an additional `grep` to look for a specific package.
+* You may not install additional software from packages not part of the operating system distribution (i.e. you would have to add a repo using `add-apt-repository` or similar) or from other locations except when directed by an exam question, and only from the links or instructions it gives you.
     * **NOTE** You won't be asked to install anything (e.g. CNI plugins) for which a link isn't present in the allowed docs. You will be provided with a link in the question.
 * There is a simulation of the exam environment [here](https://killercoda.com/kimwuestkamp/scenario/cks-cka-ckad-remote-desktop).
 
