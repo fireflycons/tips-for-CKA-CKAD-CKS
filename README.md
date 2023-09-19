@@ -128,6 +128,11 @@ Once the proctor is satisfied and launches the exam, this is what you will get.
         apt list | grep -v installed
         ```
         There is *a lot* of output. Filter further by piping to an additional `grep` to look for a specific package.
+    * To see what repos are included in the distribution.
+        ```
+        cat /etc/apt/sources.list | grep -v '^#'
+        ```
+        You *may not* edit this file and uncomment any of the commented out repos.
 * You may not install additional software from packages not part of the operating system distribution (i.e. you would have to add a repo using `add-apt-repository` or similar) or from other locations except when directed by an exam question, and only from the links or instructions it gives you.
     * **NOTE** You won't be asked to install anything (e.g. CNI plugins) for which a link isn't present in the allowed docs. You will be provided with a link in the question.
 * There is a simulation of the exam environment [here](https://killercoda.com/kimwuestkamp/scenario/cks-cka-ckad-remote-desktop).
