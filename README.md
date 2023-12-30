@@ -170,7 +170,7 @@ Please read https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2/
 
 # Pro Tips
 
-* Know as many imperative commands as you can. This will reduce the amount of YAML editing you need to do. For example if you are asked to create an nginx pod and set up a volume mount inside it, create the pod imperatively, then only make necessary edits to YAML to add the volume...
+* Know as many [imperative commands](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#create) as you can. This will reduce the amount of YAML editing you need to do. For example if you are asked to create an nginx pod and set up a volume mount inside it, create the pod imperatively, then only make necessary edits to YAML to add the volume...
 
     ```shell
     kubectl run my-pod --image=nginx --dry-run=client -o yaml > my-pod.yaml
