@@ -106,7 +106,7 @@ You are allowed to launch the session 30 minutes before your scheduled time. You
     1. Scan all round the room with the camera
     1. Scan your desk area from top to bottom, including under the desk.
     1. Scan wrists and arms to prove no watches or smart-wear. You should wear short-sleeves to make this easier.
-    1. Perform a sweep of your head, showing both ears (they're looking for ear buds), and any eye wear. If you wear in-ear hearing aids you should consider removing these also, as the proctor will only ever communicate with you via the chat box.
+    1. Perform a sweep of your head, showing both ears (they're looking for ear buds), and any eye wear. If you wear in-ear hearing aids you should consider removing these also, as the proctor will only ever communicate with you via the chat box - in fact they will ask you to poweroff or disconnect any external speakers they see.
     1. Show your water if you have it. This can only be water and must be in a clear container.
     1. Show your phone, and within the camera's view, move it to a location behind you and out of reach.
 
