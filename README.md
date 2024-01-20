@@ -112,9 +112,9 @@ You are allowed to launch the session 30 minutes before your scheduled time. You
 
     If you have cleared your work area well then there should be no issues. Anything the proctor is unhappy about, you will be given instructions what to do and will have to re-do camera sweeps.
 
-# The Exam Portal (Performance-based)
+# The Exam Portal (performance-based)
 
-If you doing an MCQ test like PCA, skip this section, as the UI is just simple multiple choice.
+If you doing an MCQ test like PCA, skip the remaining sections and just check the [links](#links) at the end.
 
 Once the proctor is satisfied and launches the exam, this is what you will get.
 
