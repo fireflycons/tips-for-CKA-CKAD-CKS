@@ -85,7 +85,7 @@ You are allowed to launch the session 30 minutes before your scheduled time. You
 * Use the link provided to download the PSI software. *Do not* use any version you have from a previous Linux Foundation exam - uninstall that first and prior to launching the exam.
 * Install and run it
 * It will then do a system check - here is where you will need your admin privileges!
-    * **IMPORTANT** Just because your machine passed the system check you ran from the Linux Foundation portal page _does not_ guarantee you will get through this section unscathed! That initial check is only for basic compatibility.
+    * **IMPORTANT** Just because your machine passed the system check you ran from the Linux Foundation portal page _does not_ guarantee you will get through this section unscathed! That initial check is only for basic compatibility as the browser app does not have full permissions to check everything that will be checked by the installed PSI software.
     * It will check only [one monitor is active](https://github.com/kodekloudhub/community-faq#can-i-use-multiple-monitors).
     * It will check that your microphone and camera are working.
     * It will check that required outgoing ports are not blocked (likely if you're connected to a [corporate network](https://github.com/kodekloudhub/community-faq#can-i-use-a-corporate-device)).
