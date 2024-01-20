@@ -102,7 +102,7 @@ You are allowed to launch the session 30 minutes before your scheduled time. You
 * Now you have to do all the photo and video fun! It is well worth having an external camera on a USB port with a fairly long cable for this. Currently (as of Jan 2024) the check in process goes like this
     1. Take a photo of your ID
     1. Take a photo of yourself - roughly passport perspective.
-    1. Wait for the proctor to arrive. They are initially verifying the images you have uploaded and checking the details match with your exam entry. When the proctor arrives your will be asked to...
+    1. Wait for the proctor to arrive. They are initially verifying the images you have uploaded and checking the details match with your exam entry. When the proctor arrives you will be asked to...
     1. Scan all round the room with the camera
     1. Scan your desk area from top to bottom, including under the desk.
     1. Scan wrists and arms to prove no watches or smart-wear. You should wear short-sleeves to make this easier.
