@@ -1,5 +1,8 @@
 # Tips for CKA-CKAD-CKS
-Quick tips on exam-day preparation.
+
+Quick tips on exam-day preparation. Points about proctor check in and workspace preparation apply to all Linux Foundation online proctored exams.
+
+Note that there is no option to take Linux Foundation exams at test centres.
 
 **IMPORTANT** Beginning June 25 2022, the exam is now delivered via the PSI Secure Browser which is software you must install from a download link provided during the exam registration process. You no longer conduct the exam from your own Chrome browser, therefore you can't use pre-prepared bookmarks.
 
@@ -38,7 +41,7 @@ I think take the following into consideration.
 
 The area about your person and around where you will be sitting must be completely free of clutter, distractions and anything that the proctor may consider that you could be using to gain some sort of advantage. Proctors are *very* fussy about this so the more stuff you can get out of the way before you start the process the better, or you will find it very stressful when you keep getting asked to move things and re-sweep the area with the camera.
 
-* Make sure there are no objects (other than furniture) within 2 metres of where you are sitting, other than the computer equipment required for the exam. You are also allowed water in a clear glass. No pens, paper, books, electronics or any other clutter or anything with text on (that could be seen by proctor as a cheat sheet), including on the walls.
+* Make sure there are no objects (other than furniture) within 2 metres of where you are sitting, other than the computer equipment required for the exam. You are also allowed water in a clear glass. No pens, paper, books, electronics or any other clutter or anything with text on (that could be seen by proctor as a cheat sheet), including on the walls.</br>Anything you can move, move it - no matter how unobtrusive you think it may be!
 * Remove all wristwear. Ideally wear a short-sleeve (T) shirt so it can be seen you are not concealing anything.
 * If there are removable drawers in your desk, best to remove them.
 * If you have a printer nearby, remove the paper (I was asked to do this).
@@ -69,13 +72,17 @@ Additionally
 
 Note that you should practice getting a clear shot of your ID using your webcam *well before* exam day. Even consider building something to hold the ID card steady using your kids Lego or something :smile:.
 
-This image shows a Logitech QuickCam Pro 9000 pointed at a generic business card which is the same size as my photo ID. By mounting like this, the camera is stable and will autofocus, plus it leaves your hands free to click the button on the UI to take the shot. Be prepared to adjust the rig slightly at exam time to frame the shot correctly. This rig was used successfully in an exam I took in Nov 2022.
+This image shows a 10 year old Logitech QuickCam Pro 9000 pointed at a train ticket which is the same size as my photo ID. By mounting like this, the camera is stable and will autofocus, plus it leaves your hands free to click the button on the UI to take the shot. Be prepared to adjust the rig slightly at exam time to frame the shot correctly. The white envelope behind it provides a neutral backdrop. I have used this rig twice in Linux Foundation exams with no issues from proctor.
 
-![Camera Rig](./img/external-camera-id-photo.jpg)
+![Camera Rig](./img/camera-rig.jpg)
+
+And the picture it took
+
+![Photo](./img/camera-rig-photo.png)
 
 You are allowed to launch the session 30 minutes before your scheduled time. You will need all those 30 minutes, so connect promptly, as before you even talk to the proctor, you need to complete the self check-in process. This goes as follows:
 
-* Use the link provided to download the PSI software
+* Use the link provided to download the PSI software. *Do not* use any version you have from a previous Linux Foundation exam - uninstall that first and prior to launching the exam.
 * Install and run it
 * It will then do a system check - here is where you will need your admin privileges!
     * **IMPORTANT** Just because your machine passed the system check you ran from the Linux Foundation portal page _does not_ guarantee you will get through this section unscathed! That initial check is only for basic compatibility.
@@ -92,18 +99,22 @@ You are allowed to launch the session 30 minutes before your scheduled time. You
         * Services related to interfacing with phones.
         * Remote access services (TeamViewer, LogMeIn etc.)
         * Collaboration software (MS Teams, Webex, Zoom, Slack etc.)
-* Now you have to do all the photo and video fun! It is well worth having an external camera on a USB port with a fairly long cable for this. In this part of the check-in process you may be requested to record videos, or it may be interactive with the proctor. I have experienced both cases. In the case where you record the video yourself, all the video segments record for 15 seconds. You get the option to re-take or continue after each photo and video. You have to
-   1. Take a photo of your ID. This step is usually before the proctor arrives.
-   1. The following steps may or may not be interactive with the proctor:
-   1. Perform a 360 degree sweep of the room beginning with the wall on your left
-   1. Perform a sweep of your desk area from floor up to ceiling
-   1. Perform a sweep of your desktop from left to right, finishing with showing your phone and then placing it out of reach behind you.
-   1. Perform a sweep of your head, showing both ears (they're looking for ear buds), and any eye wear. If you wear in-ear hearing aids you may consider removing these also, as the proctor will only ever communicate with you via the chat box.
-   1. Perform a sweep of both wrists to prove the absence of smart-wear.
-   1. Take a photo of your face, sort of passport perspective.
-* Once you have completed all the above, you then wait until the proctor activates the chat window and gives final instructions. If you have followed all of the above well, then the proctor should allow you to proceed to the exam, otherwise you may be asked to move things around and re-show areas with the camera.
+* Now you have to do all the photo and video fun! It is well worth having an external camera on a USB port with a fairly long cable for this. Currently (as of Jan 2024) the check in process goes like this
+    1. Take a photo of your ID
+    1. Take a photo of yourself - roughly passport perspective.
+    1. Wait for the proctor to arrive. They are initially verifying the images you have uploaded and checking the details match with your exam entry. When the proctor arrives your will be asked to...
+    1. Scan all round the room with the camera
+    1. Scan your desk area from top to bottom, including under the desk.
+    1. Scan wrists and arms to prove no watches or smart-wear. You should wear short-sleeves to make this easier.
+    1. Perform a sweep of your head, showing both ears (they're looking for ear buds), and any eye wear. If you wear in-ear hearing aids you should consider removing these also, as the proctor will only ever communicate with you via the chat box.
+    1. Show your water if you have it. This can only be water and must be in a clear container.
+    1. Show your phone, and within the camera's view, move it to a location behind you and out of reach.
 
-# The Exam Portal
+    If you have cleared your work area well then there should be no issues. Anything the proctor is unhappy about, you will be given instructions what to do and will have to re-do camera sweeps.
+
+# The Exam Portal (Performance-based)
+
+If you doing an MCQ test like PCA, skip this section, as the UI is just simple multiple choice.
 
 Once the proctor is satisfied and launches the exam, this is what you will get.
 
