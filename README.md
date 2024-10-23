@@ -52,7 +52,7 @@ Please also read carefully Linux Foundation's [Exam Rules and Policies](https://
 
 # Your Workstation
 
-* Windows is the platform that people have reported the fewest issues with. Mac should also be fine. Some people have had issues with Linux workstations. Note that only Ubuntu Bionic (18.04) and Focal (20.04) are supported. Jammy (22.04) _claims_ to be supported, but don't trust this yet. There have been issues reported launching the PSI software installer. No other distro or version.
+* Windows is the platform that people have reported the fewest issues with. Mac should also be fine. Some people have had issues with Linux workstations. Note that only Ubuntu 20.04, 22.04 and 24.04 are supported though there have been issues reported launching the PSI software installer. No other distro or version. See also [PSI Bridge requirements](https://helpdesk.psionline.com/hc/en-gb/articles/4409608794260--PSI-Bridge-FAQ-System-Requirements).
 * Do not use a workstation belonging to your employer, unless you have the ability to use an admin account on it.
 * Since this is a custom browser, you do not have the ability to use pre-prepared bookmarks.
 * Make sure you can move your camera. A plug-in USB camera on a long lead is recommended to facilitate the check in process (see Launching the exam below).
