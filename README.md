@@ -29,7 +29,7 @@ Always the burning question!
 I think take the following into consideration.
 
 * You can complete the mock exams and lightning labs (KodeKloud/Udemy Mumshad Mannambeth courses) faster than the instructor (where a solution video is posted) with no errors. Generally this means 20-30 min depending on the test.
-* Now buy your exam. Wait for a decent coupon code to come up - these are always publicised on the KodeKloud slack channels. You have a year to actually schedule it. Linux Foundation do discount promotions 3-4 times a year. Always on Cyber Monday, other times vary and there is no advance notice as to when these will happen.
+* Now buy your exam. Wait for a decent coupon code to come up - these are always publicised on the KodeKloud discord channels. You have a year to actually schedule it. Linux Foundation do discount promotions 3-4 times a year. Always on Cyber Monday, other times vary and there is no advance notice as to when these will happen.
 * Do one of your two attempts at killer.sh. Reset it as many times as necessary in the 36 hours you have. You're aiming to complete it within 10 points of maximum score ideally in little more than 90 minutes. Killer is arguably *harder* than the real exam!
     * If you achieve that on the first session, you're probably ready.
     * If you don't - read and understand the killer solutions, go back, revise the lectures, redo the labs, give it a few weeks.
@@ -100,7 +100,7 @@ You are allowed to launch the session 30 minutes before your scheduled time. You
         * Command prompts (even if they are started by a service). This got me for a bit, as I had an Icecast server running as a service and this opened an invisible command prompt.
         * Services related to interfacing with phones.
         * Remote access services (TeamViewer, LogMeIn etc.)
-        * Collaboration software (MS Teams, Webex, Zoom, Slack etc.)
+        * Collaboration software (MS Teams, Webex, Zoom, Slack, Discord etc.)
 * Now you have to do all the photo and video fun! It is well worth having an external camera on a USB port with a fairly long cable for this. Currently (as of Jan 2024) the check in process goes like this
     1. Take a photo of your ID
     1. Take a photo of yourself - roughly passport perspective.
