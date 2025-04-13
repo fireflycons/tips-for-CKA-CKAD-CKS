@@ -43,6 +43,8 @@ The area about your person and around where you will be sitting must be complete
 
 * Make sure there are no objects (other than furniture) within 2 metres of where you are sitting, other than the computer equipment required for the exam. You are also allowed water in a clear glass. No pens, paper, books, electronics or any other clutter or anything with text on (that could be seen by proctor as a cheat sheet), including on the walls.</br>Anything you can move, move it - no matter how unobtrusive you think it may be!
 * Remove all wristwear. Ideally wear a short-sleeve (T) shirt so it can be seen you are not concealing anything.
+* If you wear glasses, you will be asked to show these to the proctor to ensure they have no smart device attached.
+* If you wear hearing aids, remove them. The proctor will not speak to you, they only use web chat.
 * If there are removable drawers in your desk, best to remove them.
 * If you have a printer nearby, remove the paper (I was asked to do this).
 * Anything that's not easily moved like a big bookshelf, throw a sheet over it.
