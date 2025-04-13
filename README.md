@@ -29,7 +29,7 @@ Always the burning question!
 I think take the following into consideration.
 
 * You can complete the mock exams and lightning labs (KodeKloud/Udemy Mumshad Mannambeth courses) faster than the instructor (where a solution video is posted) with no errors. Generally this means 20-30 min depending on the test.
-* Now buy your exam. Wait for a decent coupon code to come up - these are always publicised on the KodeKloud slack channels. You have a year to actually schedule it.
+* Now buy your exam. Wait for a decent coupon code to come up - these are always publicised on the KodeKloud slack channels. You have a year to actually schedule it. Linux Foundation do discount promotions 3-4 times a year. Always on Cyber Monday, other times vary and there is no advance notice as to when these will happen.
 * Do one of your two attempts at killer.sh. Reset it as many times as necessary in the 36 hours you have. You're aiming to complete it within 10 points of maximum score ideally in little more than 90 minutes. Killer is arguably *harder* than the real exam!
     * If you achieve that on the first session, you're probably ready.
     * If you don't - read and understand the killer solutions, go back, revise the lectures, redo the labs, give it a few weeks.
