@@ -274,11 +274,15 @@ After saving this, close the terminal and open a new one. Your saved settings wi
 
 ## TMUX
 
+UPDATE: November 2025
+
+If `tmux` is not available directly on the candidate node of the exam environment (node where the terminal application opens on), and `apt update ; apt install -y tmux` does not work then it is not available for use, since under the rules of the exams you may only install packages that are already present in the node's default package lists and you may not download them from elsewhere, nor modify package lists to make it available.
+
 With the new GUI desktop-based exam environment, use of `tmux` is somewhat deprecated as you can open multiple terminal windows. The one scenario where it is still useful is the case where you may want to enter the [same sequence of commands](https://medium.com/@thehackadda/synchronize-panes-in-tmux-5cd6bc54ca83) at more than one node simultaneously. Ensure you have `ssh`-ed to the target nodes in each pane before activating sync.
 
 If you have a low res monitor, such that the desktop area is really small, you may still consider `tmux` in a single terminal window.
 
-Here is a workable `tmux` configuration that supports mouse selection of panes and `CTRL + X` to toggle sync mode. If using `tmux`, enter the following to a terminal window at the start of the exam.
+Here is a workable `tmux` configuration that supports mouse selection of panes and `CTRL + X` to toggle sync mode. If using `tmux`, enter the following to a terminal window at the start of the exam (you must memorize this, you cannot open this page in the exam terminal).
 
 ```shell
 
