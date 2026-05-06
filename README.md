@@ -46,7 +46,8 @@ The area about your person and around where you will be sitting must be complete
 * If you wear glasses, you will be asked to show these to the proctor to ensure they have no smart device attached.
 * If you wear hearing aids, remove them. The proctor will not speak to you, they only use web chat.
 * If there are removable drawers in your desk, best to remove them.
-* If you have a printer nearby, remove the paper (I was asked to do this).
+* If you have a printer nearby, disconnect it and turn it round such that the room sweep can show that it is not connected, or remove it entirely.
+* If you have additional monitors, remove them. If they are fixed to arms and can't be easily removed, disconnect them and swivel the arms such that the rear of the monitor can be seen by the camera and seen to be disconnected.
 * Anything that's not easily moved like a big bookshelf, throw a sheet over it.
 * Keep your phone nearby. You will be explicitly asked to show it to the camera and then move it to a location out of reach behind you during the check in process.
 
@@ -54,11 +55,10 @@ Please also read carefully Linux Foundation's [Exam Rules and Policies](https://
 
 # Your Workstation
 
-* Windows is the platform that people have reported the fewest issues with. Mac should also be fine. Some people have had issues with Linux workstations. Note that only Ubuntu 20.04, 22.04 and 24.04 are supported though there have been issues reported launching the PSI software installer. No other distro or version. See also [PSI Bridge requirements](https://helpdesk.psionline.com/hc/en-gb/articles/4409608794260--PSI-Bridge-FAQ-System-Requirements).
+* Windows is the platform that people have reported the fewest issues with. Mac should also be fine. Some people have had issues with Linux workstations. Note that only specific versions of Ubuntu are supported though there have been issues reported launching the PSI software installer. No other distro or version. Note that when using Ubuntu, only X11 display is supported, *not* [Wayland](https://askubuntu.com/questions/904940/how-can-i-tell-if-i-am-running-wayland). See also [PSI Bridge requirements](https://helpdesk.psionline.com/hc/en-gb/articles/4409608794260--PSI-Bridge-FAQ-System-Requirements).
 * Do not use a workstation belonging to your employer, unless you have the ability to use an admin account on it.
 * Since this is a custom browser, you do not have the ability to use pre-prepared bookmarks.
-* Make sure you can move your camera. A plug-in USB camera on a long lead is recommended to facilitate the check in process (see Launching the exam below).
-* Multiple monitors are not allowed as of June 2022. The PSI Secure Browser checks will look for all enabled monitors and refuse to proceed if it detects more than one. If you have more than one monitor, remove the others. If you have a laptop with an external monitor and the external monitor is better than the laptop display, then you must ensure the laptop display is disabled (your display settings should only register the external monitor). If you're unable to disable the laptop monitor, then close the lid (which should disable it) and connect USB keyboard/mouse/camera.
+* Multiple monitors are not allowed as of June 2022. The PSI Secure Browser checks will look for all enabled monitors and refuse to proceed if it detects more than one. If you have more than one monitor, remove the others. If you have a laptop with an external monitor and the external monitor is better than the laptop display, then you must ensure the laptop display is disabled (your display settings should only register the external monitor). If you're unable to disable the laptop monitor, then close the lid (which should disable it) and connect USB keyboard/mouse/camera. See [here](http://github.com/kodekloudhub/community-faq#can-i-use-multiple-monitors).
 * You are _strongly_ recommended to use a high-res monitor, e.g. 4K or close. If you're only using a standard 1920x1080 HD display, you will get very little screen real-estate for the Linux desktop environment, due to the side panel for the questions, and the control menu bar at the top.<br>You are not recommended to use a small laptop display (like 13 or 14 inch) that you have to use scaling on to be able to read the text. Anything other than 100% scale and you'll be seriously disadvantaged!</br>See also [Can I use an external monitor](https://github.com/kodekloudhub/community-faq#can-i-use-an-external-monitor) on the KodeKloud community FAQ.
 * If you live in an area with a high chance of power cuts, consider tethering your laptop to your phone. Ensure both are fully charged and will last the (anything up to 3 hours) required including proctor setup. If you have a desktop computer consider buying a small UPS. <br>**IMPORTANT** This method has not yet been proven, so raise a ticket with Linux Foundation to check that use of phone wi-fi is acceptable.
 * If you have made changes to your normal environment to fit the exam conditions (e.g. any of the above), test it thoroughly in advance of exam day!
@@ -101,18 +101,23 @@ You are allowed to launch the session 30 minutes before your scheduled time. You
         * Services related to interfacing with phones.
         * Remote access services (TeamViewer, LogMeIn etc.)
         * Collaboration software (MS Teams, Webex, Zoom, Slack, Discord etc.)
-* Now you have to do all the photo and video fun! It is well worth having an external camera on a USB port with a fairly long cable for this. Currently (as of Jan 2024) the check in process goes like this
-    1. Take a photo of your ID
-    1. Take a photo of yourself - roughly passport perspective.
-    1. Wait for the proctor to arrive. They are initially verifying the images you have uploaded and checking the details match with your exam entry. When the proctor arrives you will be asked to...
-    1. Scan all round the room with the camera
-    1. Scan your desk area from top to bottom, including under the desk.
-    1. Scan wrists and arms to prove no watches or smart-wear. You should wear short-sleeves to make this easier.
-    1. Perform a sweep of your head, showing both ears (they're looking for ear buds), and any eye wear. If you wear in-ear hearing aids you should consider removing these also, as the proctor will only ever communicate with you via the chat box - in fact they will ask you to poweroff or disconnect any external speakers they see.
-    1. Show your water if you have it. This can only be water and must be in a clear container.
-    1. Show your phone, and within the camera's view, move it to a location behind you and out of reach.
 
-    If you have cleared your work area well then there should be no issues. Anything the proctor is unhappy about, you will be given instructions what to do and will have to re-do camera sweeps.
+Now you have to do all the photo and video fun! As of 2026 there is now a facility to use the camera on your phone to do the room scan negating the need for doing acrobatics with the laptop camera. Note that you must still have a working webcam for the exam itself. Phone camera may only be used for room scan.
+
+1. Take a photo of your ID. This step can actually be performed when scheduling the exam and will remain on file for some time. If you take subsequent exams you may find that you don't have to repeat this step.
+1. Take a photo of yourself using the computer webcam - roughly passport perspective.
+1. Wait for the proctor to arrive. They are initially verifying the images you have uploaded and checking the details match with your exam entry.
+
+When the proctor arrives you will be asked if you are using your phone or webcam for the room scan. Note that there is a QR code presented that redirects your phone to the proctor check site. Don't scan the code immediately as the link may expire. Wait until the proctor tells you to proceed. If you are not using a phone, then you should use a webcam with a long cable for ease rather than swinging the laptop around.
+
+1. Scan all round the room with the camera
+1. Scan your desk area from top to bottom, including under the desk.
+1. Scan wrists and arms to prove no watches or smart-wear. You should wear short-sleeves to make this easier.
+1. Perform a sweep of your head, showing both ears (they're looking for ear buds), and any eye wear. If you wear in-ear hearing aids you should consider removing these also, as the proctor will only ever communicate with you via the chat box - in fact they will ask you to poweroff or disconnect any external speakers they see.
+1. Show your water if you have it. This can only be water and must be in a clear container.
+1. Show your phone to the computer's webcam, and within the camera's view, move it to a location behind you and out of reach.
+
+If you have cleared your work area well then there should be no issues. Anything the proctor is unhappy about, you will be given instructions what to do and will have to re-do camera sweeps.
 
 # The Exam Portal (performance-based)
 
